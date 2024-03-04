@@ -1,0 +1,164 @@
+.container-perfil{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil-sobre{
+    width: 50%;
+    height: 80%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+    justify-content: flex-start;
+}
+
+.perfil-titulo h3{
+    font-size: 2rem;
+    font-family: "Dosis", sans-serif;
+}
+
+.perfil-paragrafo{
+    width: 90%;
+}
+
+.perfil-paragrafo p{
+    font-size: 1.3rem;
+    font-family: "Dosis", sans-serif;
+}
+
+.perfil-img{
+    position: relative;
+    width: 30%;
+    height: 80%;
+    background-image: url(/assets/img/fotosobremim.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0) 0px 2px 4px, rgb(0, 0, 0) 0px 7px 13px -3px, rgb(0, 0, 0) 0px -3px 0px inset;
+    opacity: 8;
+}
+
+.sombra{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.perfil-social{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.perfil-social button{
+    background-color: #FFFFFF;
+    height: 40px;
+    width: 100px;
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contato{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    flex-direction: column;
+}
+.contato-titulo{
+    height: 40px;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text-animacao{
+    opacity: 0;
+    animation: surgir 10s ease forwards;
+}
+@keyframes surgir{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.contato-titulo h3{
+    font-size: 1.4rem;
+}
+
+.contato-formacao ul{
+    font-size: 1.2rem;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822)
+}
+
+.titulo-mobile{
+    display: none;
+}
+
+
+@media (max-width: 450px) {
+    .container-perfil{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+        gap: 10px;
+       
+    }
+    .perfil-sobre{
+        width: 90%;
+    }
+    .perfil-paragrafo{
+        font-size: 1.3rem;
+        width: 100%;
+    }
+    .perfil-titulo h3{
+        display: none;
+    }
+    .perfil-img{
+        width: 90%;
+        background-image: url(/assets/img/fotosobremim.png);
+        background-size: cover;
+        background-position: center;
+        margin-top: 10px;
+    }
+    .titulo-mobile{
+        color: #fff;
+        display: block;
+        width: 90%;
+        height: 100px;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+    .contato{
+        width: 80%;  
+    }
+   .contato-formacao ul {
+    font-size: 1rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822)
+   }
+
+}

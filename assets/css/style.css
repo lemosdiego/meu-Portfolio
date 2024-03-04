@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+body{
+    overflow-x: hidden;
+   background: #010127;
+}
+
+li{
+    list-style: none;
+}
+
