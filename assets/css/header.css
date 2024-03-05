@@ -46,9 +46,9 @@
 
 .animacao{
     opacity: 0;
-    animation: surgir 10s ease forwards;
+    animation: surgirlogo 20s ease forwards;
 }
-@keyframes surgir {
+@keyframes surgirlogo {
     from{
         opacity: 0;
     }
@@ -131,7 +131,7 @@
 
 
 
-@media (max-width: 450px){
+@media (min-width: 320px) and (max-width: 480px){
     border{
         overflow-x: hidden;
     }
@@ -213,4 +213,88 @@
     }
 
 
+}
+
+/*tablets*/
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .header-menu ul{ 
+        display: none;
+    }
+    .header-menu{
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .header-logo{
+        margin-left: 20px;
+    }
+
+     .header-apresentacao-mobile{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-apresentacao{
+        width: 94%;
+        margin: 0;
+    }
+
+    .header{
+        position: relative;
+        height: 100vh;
+        background: url(/assets/img/background-mobile.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .menu-mobile{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background-color: #010127;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: rgb(255, 254, 254) 0px 1px 3px, rgb(245, 243, 243) 0px 1px 2px;
+        overflow-x: hidden;
+    }
+
+    .menu-icon{
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+    }
+    
+    .menu-icon img{
+        width: 100%;
+        height: 100%;  
+    }
+
+   
+}
+
+
+/*laptops*/
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+/*telas grandes*/
+@media (min-width: 1025) and (max-width: 1200) {
+
+}
+/*extra grandes*/
+@media (min-width: 1221) {
+
+}
+/*horizontal*/
+@media (orientation: landscape){
+    
 }

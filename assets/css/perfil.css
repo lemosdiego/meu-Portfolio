@@ -123,7 +123,7 @@
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
     .container-perfil{
         display: flex;
         flex-direction: column-reverse;
@@ -171,7 +171,7 @@
    }
 
    .perfil-paragrafo p{
-    font-size: 1.2rem;
+    font-size: 1rem;
    }
 
    #pontos{
@@ -192,4 +192,119 @@
     border-radius: 2px;
     margin-top: 10px;
     }
+    .perfil-paragrafo{
+        font-size: 1.3rem;
+        width: 100%;
+    }
+    .perfil-titulo h3{
+        display: none;
+    }
+    .titulo-mobile{
+        color: #fff;
+        display: block;
+        width: 90%;
+        height: 100px;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+    .contato{
+        width: 80%;  
+    }
+}
+
+
+
+/*tablets*/
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .container-perfil{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+        gap: 10px;
+       
+    }
+
+    .perfil-sobre{
+        width: 90%;
+       
+    }
+    
+    .perfil-img{
+        width: 90%;
+        background-image: url(/assets/img/fotosobremim.png);
+        background-size: cover;
+        background-position: center;
+        display: none;
+    }
+    .contato-formacao ul {
+        font-size: 1rem;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        font-style: italic;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822)
+       }
+    
+       .perfil-paragrafo p{
+        font-size: 1rem;
+       }
+    
+       #pontos{
+        display: block;
+        }
+        #mais{
+        display: none;
+        }
+    
+        #leiamais{
+        display: block;
+        border: none;
+        background: none;
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.9) 0px 0px 0px 1px;
+        color: #fff;
+        height: 30px;
+        width: 60px;
+        border-radius: 2px;
+        margin-top: 10px;
+        }
+        .perfil-paragrafo{
+            font-size: 1.3rem;
+            width: 100%;
+        }
+        .perfil-titulo h3{
+            display: none;
+        }
+        .titulo-mobile{
+            color: #fff;
+            display: block;
+            width: 90%;
+            height: 100px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.5rem;
+        }
+        .contato{
+            width: 80%;  
+        }
+
+    
+}
+
+/*laptops*/
+@media (min-width: 469) and (max-width: 1024) {
+
+}
+/*telas grandes*/
+@media (min-width: 1025) and (max-width: 1200) {
+
+}
+/*extra grandes*/
+@media (min-width: 1221) {
+
+}
+/*horizontal*/
+@media (orientation: landscape){
+    
 }
