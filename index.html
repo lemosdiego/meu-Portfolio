@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pORTFOLIO</title>
+    <link rel="shortcut icon" href="/assets/img/portfolio.ico" type="image/x-icon">
+    <title>PORTIFOLIO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
@@ -51,7 +52,8 @@
                 <h3>Sobre mim</h3>
             </div>
             <div class="perfil-paragrafo">
-                <p class="text-animacao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ea asperiores quas aut ex delectus eaque nostrum numquam totam! Nisi consequatur eligendi suscipit veniam voluptate possimus aliquam quia tempora hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquam sapiente voluptate et quidem, vel repudiandae eos? At quisquam nihil ipsa culpa repellat nisi veritatis neque sequi similique? Reprehenderit, blanditiis?</p>
+                <p class="text-animacao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ea asperiores quas aut ex delectus eaque nostrum numquam totam! Nisi consequatur eligendi suscipit veniam voluptate possimus aliquam quia tempora hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquam sapiente voluptate et quidem, vel repudiandae eos? At quisquam nihil ipsa culpa repellat nisi veritatis neque sequi <span id="pontos">...</span><span id="mais">similique? Reprehenderit, blanditiis?repellat nisi veritatis neque sequi similique? Reprehenderit, blanditiis?</span></p>
+                <button id="leiamais" onclick="leiaMais()">leia mais </button>
             </div>
             <div class="perfil-social">
                 <button>Curriculo</button>
@@ -62,9 +64,9 @@
                 </div>
                 <div class="contato-formacao">
                     <ul>
-                        <li>Superior em Análise e desenvolvimento de Sistemas - Unopar- Dez/2023</li>
-                        <li>Pós-Graduação em Engenharia de Software -Cursando - Unopar - Dez/2024</li>
-                        <li>Pós-Graduação em  Desenvolvimento Full-Stak - Cursando - Unopar - Dez/2024</li>
+                        <li>Superior em Análise e desenvolvimento de Sistemas - Dez/2023</li>
+                        <li>Pós-Graduação em Engenharia de Software - <b>Cursando</b> - Dez/2024</li>
+                        <li>Pós-Graduação em  Desenvolvimento Full-Stak - <b>Cursando</b> - Dez/2024</li>
                     </ul>
                 </div> 
             </div>
@@ -177,7 +179,7 @@
                     </div>
                     <div class="card-niveis">
                         <div id="card8">
-                            <p>TypeScript 40%</p>
+                            <p>TypeScript 50%</p>
                         </div>
                     </div>
                     <div class="card-niveis">
@@ -194,11 +196,80 @@
             </div>
         </div>
         <div class="skills">
-
+            <div class="skills-titulo">
+                <h3>Skills</h3>
+            </div>
+            <div class="lista-skills">
+                <ul>
+                    <li>Vontade de aprender</li>
+                    <li>Auto didata</li>
+                    <li>Resiliência </li>
+                    <li>Flexibilidade</li>
+                    <li>Motivação</li>
+                </ul>
+            </div>
         </div>
     </div>
     <footer class="footer" id="footer">
-
+        <div class="container-contatos">
+            <div class="formulario-contato">
+                <div class="form-titulo">
+                    <h3>Entre em contato</h3>
+                </div>
+                <div class="formulario">
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="71bf7d3e-399a-41d9-a329-ea4cb2e65419">
+                        <input type="hidden" name="redirectTo" value="http://192.168.2.14:5500/">
+                        <label for="inputNome">Nome</label>
+                        <input type="text" id="inputNome" name="name" required maxlength="25" minlength="2">
+                        <label for="inputNome">Sobrenome</label>
+                        <input type="text" id="inputNome" name="name" required maxlength="25" minlength="2">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" id="inputEmail" name="email" required maxlength="40">
+                        <label for="textAreaMensagem">Mensagem</label>
+                        <div class="text-area"><textarea name="message" id="textAreaMensagem" required maxlength="100" cols="50" rows="4"></textarea></div>
+                        <button class="button-form">Enviar</button>
+                </div>
+            </div>
+            <div class="contatos">
+                <div class="contato-redes">
+                  <div class="redes-titulo">
+                    <h3>Redes</h3>
+                  </div>
+                  <div class="contato-icons">
+                    <div class="icones">
+                        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">
+                            <img src="/assets/img/linkedin.svg" alt="Linkedin">
+                        </a>
+                    </div>
+                    <div class="icones">
+                        <a href="https://github.com/lemosdiego" target="_blank">
+                            <img src="/assets/img/github.svg" alt="Github">
+                        </a>
+                    </div>
+                    <div class="icones">
+                        <a href="https://WA.me/5581982383803" target="_blank">
+                            <img src="/assets/img/whatsapp.svg" alt="WhatsApp">
+                        </a>
+                    </div>
+                    <div class="icones">
+                        <a href="https://ig.me/m/washington.lemos_" target="_blank">
+                            <img src="/assets/img/instagram.svg" alt="Instagram">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="contato-adicionais">
+                    <div class="informacoes-adicionais">
+                        <p>washington.contato1327@gmail.com</p>
+                        <p>São Paulo-SP</p>
+                    </div>
+                    <div class="voltar-topo" id="topo">
+                        <a href="#"><img src="/assets/img/topobranco.svg" alt="Voltar ao topo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <div class="menu-mobile">
         <div class="menu-icon">
@@ -211,10 +282,10 @@
            <a href="#projetos"> <img src="/assets/img/projetoswhite.svg" alt=""></a>
         </div>
         <div class="menu-icon">
-            <img src="/assets/img/ferramentawhite.svg" alt="">
+           <a href="#ferramentas"> <img src="/assets/img/ferramentawhite.svg" alt=""></a>
         </div>
         <div class="menu-icon">
-            <img src="/assets/img/contatobranco.svg" alt="">
+            <a href="#footer"><img src="/assets/img/contatobranco.svg" alt=""></a>
         </div>
     </div>
     <script src="/assets/js/script.js"></script>

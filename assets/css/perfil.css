@@ -24,6 +24,10 @@
     font-family: "Dosis", sans-serif;
 }
 
+#leiamais{
+    display: none;
+}
+
 .perfil-paragrafo{
     width: 90%;
 }
@@ -44,7 +48,9 @@
     box-shadow: rgb(0, 0, 0) 0px 2px 4px, rgb(0, 0, 0) 0px 7px 13px -3px, rgb(0, 0, 0) 0px -3px 0px inset;
     opacity: 8;
 }
-
+#pontos{
+    display: none;
+}
 .sombra{
     position: absolute;
     top: 0;
@@ -61,13 +67,16 @@
 }
 
 .perfil-social button{
-    background-color: #FFFFFF;
+    color: #fff;
     height: 40px;
     width: 100px;
     font-family: "Dosis", sans-serif;
     text-transform: uppercase;
     border-radius: 4px;
     cursor: pointer;
+    background: none;
+    border: none;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.9) 0px 0px 0px 1px;
 }
 
 .contato{
@@ -161,4 +170,26 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822)
    }
 
+   .perfil-paragrafo p{
+    font-size: 1.2rem;
+   }
+
+   #pontos{
+    display: block;
+    }
+    #mais{
+    display: none;
+    }
+
+    #leiamais{
+    display: block;
+    border: none;
+    background: none;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.9) 0px 0px 0px 1px;
+    color: #fff;
+    height: 30px;
+    width: 60px;
+    border-radius: 2px;
+    margin-top: 10px;
+    }
 }
