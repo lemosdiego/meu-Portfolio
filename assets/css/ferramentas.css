@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     gap: 3px;
+    box-shadow: rgba(255, 255, 255, 0.411) 0px 30px 60px -12px inset, rgba(202, 195, 195, 0.3) 0px 18px 36px -18px 
 }
 
 .ferramentas{
@@ -37,7 +38,7 @@
 
 .skills-titulo h3{
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin-top: 20px;
     font-family: "Dosis", sans-serif;
 }
@@ -214,4 +215,91 @@
         width: 90%;
         height: 250%;
     }
+}
+
+/*laptops*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container-ferramentas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ferramentas{
+        width: 90%;
+        height: 60%;
+    }
+    .ferramentas-titulo{
+        height: 15%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ferramentas-titulo h3{
+        font-size: 2rem;
+    }
+
+    .niveis{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .skills{
+        width: 70%;
+        height: 40%;
+    }
+
+    .lista-skills{
+        display: flex;
+        justify-content: flex-start;
+        width: 90%;
+
+    }
+
+    .skills-titulo{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .container-ferramentas{
+        display: flex;
+        flex-direction: row;
+        height: 90vh;
+        
+    }
+    .ferramentas-nivel{
+    }
+    .ferramentas-titulo{
+       
+        width: 50%;
+    }
+    .ferramentas-titulo h3{
+        font-size: 3rem;
+    }
+    .ferramentas-nivel{
+        height: 90%;
+        display: flex;
+        align-items: center;
+    }
+    .niveis{
+        height: 70%;
+        
+    }
+    .skills{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+    }
+    .skills-titulo{
+    }
+    .ferramentas{
+        display: flex;
+        gap: 20px;
+    }
+
 }
