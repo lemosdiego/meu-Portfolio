@@ -73,18 +73,6 @@ function desaparecerInformacoes() {
 }
 
 //ferramentas
-const progresso = [
-  "HTML 80%",
-  "CSS 70%",
-  "JavaScript 60%",
-  "Git 60%",
-  "Github 60%",
-  "React 50%",
-  "Angular 50%",
-  "TypeScript 40%",
-  "Python 40%",
-  "Php 40%",
-];
 
 let barra = document.getElementById("card1");
 barra.style.width = "80%";
