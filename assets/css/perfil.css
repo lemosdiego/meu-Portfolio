@@ -1,366 +1,353 @@
-.container-perfil{
-    width: 100%;
+.container-perfil {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(255, 255, 255, 0.411) 0px 30px 60px -12px inset,
+    rgba(202, 195, 195, 0.3) 0px 18px 36px -18px inset;
+}
+
+.perfil-sobre {
+  width: 50%;
+  height: 80%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: justify;
+  justify-content: flex-start;
+}
+
+.perfil-titulo h3 {
+  font-size: 2rem;
+}
+
+#leiamais {
+  display: none;
+}
+
+.perfil-paragrafo {
+  width: 90%;
+}
+
+.perfil-paragrafo p {
+  font-size: 1.3rem;
+}
+
+.perfil-img {
+  position: relative;
+  width: 30%;
+  height: 80%;
+  background-image: url(/assets/img/fotosobremim.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: rgb(0, 0, 0) 0px 2px 4px, rgb(0, 0, 0) 0px 7px 13px -3px,
+    rgb(0, 0, 0) 0px -3px 0px inset;
+  opacity: 8;
+}
+#pontos {
+  display: none;
+}
+.sombra {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.perfil-social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.perfil-social button {
+  color: #fff;
+  height: 40px;
+  width: 100px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(255, 255, 255, 0.9) 0px 0px 0px 1px;
+}
+
+.contato {
+  width: 80%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  flex-direction: column;
+}
+.contato-titulo {
+  height: 40px;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.text-animacao {
+  opacity: 0;
+  animation: surgir 10s ease forwards;
+}
+@keyframes surgir {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.contato-titulo h3 {
+  font-size: 1.4rem;
+}
+
+.contato-formacao ul {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
+}
+
+.titulo-mobile {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .container-perfil {
+    display: flex;
+    flex-direction: column-reverse;
     height: 100vh;
-    display: flex;
-    flex-direction: row;
     gap: 10px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: rgba(255, 255, 255, 0.411) 0px 30px 60px -12px inset, rgba(202, 195, 195, 0.3) 0px 18px 36px -18px inset;
-}
-
-.perfil-sobre{
-    width: 50%;
-    height: 80%;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: justify;
-    justify-content: flex-start;
-}
-
-.perfil-titulo h3{
-    font-size: 2rem;
-    font-family: "Dosis", sans-serif;
-}
-
-#leiamais{
-    display: none;
-}
-
-.perfil-paragrafo{
+  }
+  .perfil-sobre {
     width: 90%;
-}
-
-.perfil-paragrafo p{
+  }
+  .perfil-paragrafo {
     font-size: 1.3rem;
-    font-family: "Dosis", sans-serif;
-}
-
-.perfil-img{
-    position: relative;
-    width: 30%;
-    height: 80%;
+    width: 100%;
+  }
+  .perfil-titulo h3 {
+    display: none;
+  }
+  .perfil-img {
+    width: 90%;
     background-image: url(/assets/img/fotosobremim.png);
     background-size: cover;
     background-position: center;
-    border-radius: 10px;
-    box-shadow: rgb(0, 0, 0) 0px 2px 4px, rgb(0, 0, 0) 0px 7px 13px -3px, rgb(0, 0, 0) 0px -3px 0px inset;
-    opacity: 8;
-}
-#pontos{
-    display: none;
-}
-.sombra{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.perfil-social{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.perfil-social button{
+    margin-top: 10px;
+  }
+  .titulo-mobile {
     color: #fff;
-    height: 40px;
-    width: 100px;
-    font-family: "Dosis", sans-serif;
-    text-transform: uppercase;
-    border-radius: 4px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.9) 0px 0px 0px 1px;
-}
-
-.contato{
+    display: block;
+    width: 90%;
+    height: 100px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  .contato {
     width: 80%;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    gap: 4px;
-    flex-direction: column;
-}
-.contato-titulo{
-    height: 40px;
-    width: 80%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.text-animacao{
-    opacity: 0;
-    animation: surgir 10s ease forwards;
-}
-@keyframes surgir{
-    from{
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.contato-titulo h3{
-    font-size: 1.4rem;
-}
-
-.contato-formacao ul{
-    font-size: 1.2rem;
-    font-style: italic;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822)
-}
-
-.titulo-mobile{
-    display: none;
-}
-
-
-@media (max-width: 480px) {
-    .container-perfil{
-        display: flex;
-        flex-direction: column-reverse;
-        height: 100vh;
-        gap: 10px;
-       
-    }
-    .perfil-sobre{
-        width: 90%;
-    }
-    .perfil-paragrafo{
-        font-size: 1.3rem;
-        width: 100%;
-    }
-    .perfil-titulo h3{
-        display: none;
-    }
-    .perfil-img{
-        width: 90%;
-        background-image: url(/assets/img/fotosobremim.png);
-        background-size: cover;
-        background-position: center;
-        margin-top: 10px;
-    }
-    .titulo-mobile{
-        color: #fff;
-        display: block;
-        width: 90%;
-        height: 100px;
-        text-align: center;
-        margin-top: 20px;
-        font-size: 1.5rem;
-    }
-    .contato{
-        width: 80%;  
-    }
-   .contato-formacao ul {
+  }
+  .contato-formacao ul {
     font-size: 1rem;
     text-align: justify;
     display: flex;
     flex-direction: column;
     gap: 4px;
     font-style: italic;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822)
-   }
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
+  }
 
-   .perfil-paragrafo p{
+  .perfil-paragrafo p {
     font-size: 1rem;
-   }
+  }
 
-   #pontos{
+  #pontos {
     display: block;
-    }
-    #mais{
+  }
+  #mais {
     display: none;
-    }
+  }
 
-    #leiamais{
+  #leiamais {
     display: block;
     border: none;
     background: none;
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.9) 0px 0px 0px 1px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+      rgba(255, 255, 255, 0.9) 0px 0px 0px 1px;
     color: #fff;
     height: 30px;
     width: 60px;
     border-radius: 2px;
     margin-top: 10px;
-    }
-    .perfil-paragrafo{
-        font-size: 1.3rem;
-        width: 100%;
-    }
-    .perfil-titulo h3{
-        display: none;
-    }
-    .titulo-mobile{
-        color: #fff;
-        display: block;
-        width: 90%;
-        height: 100px;
-        text-align: center;
-        margin-top: 20px;
-        font-size: 1.5rem;
-    }
-    .contato{
-        width: 80%;  
-    }
+  }
+  .perfil-paragrafo {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  .perfil-titulo h3 {
+    display: none;
+  }
+  .titulo-mobile {
+    color: #fff;
+    display: block;
+    width: 90%;
+    height: 100px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  .contato {
+    width: 80%;
+  }
 }
-
-
 
 /*tablets*/
 @media (min-width: 481px) and (max-width: 768px) {
+  .container-perfil {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+    gap: 10px;
+  }
 
-    .container-perfil{
-        display: flex;
-        flex-direction: column-reverse;
-        height: 100vh;
-        gap: 10px;
-       
-    }
+  .perfil-sobre {
+    width: 90%;
+  }
 
-    .perfil-sobre{
-        width: 90%;
-       
-    }
-    
-    .perfil-img{
-        width: 90%;
-        background-image: url(/assets/img/fotosobremim.png);
-        background-size: cover;
-        background-position: center;
-        display: none;
-    }
-    .contato-formacao ul {
-        font-size: 1rem;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        font-style: italic;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822)
-       }
-    
-       .perfil-paragrafo p{
-        font-size: 1rem;
-       }
-    
-       #pontos{
-        display: block;
-        }
-        #mais{
-        display: none;
-        }
-    
-        #leiamais{
-        display: block;
-        border: none;
-        background: none;
-        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.9) 0px 0px 0px 1px;
-        color: #fff;
-        height: 30px;
-        width: 60px;
-        border-radius: 2px;
-        margin-top: 10px;
-        }
-        .perfil-paragrafo{
-            font-size: 1.3rem;
-            width: 100%;
-        }
-        .perfil-titulo h3{
-            display: none;
-        }
-        .titulo-mobile{
-            color: #fff;
-            display: block;
-            width: 90%;
-            height: 100px;
-            text-align: center;
-            margin-top: 20px;
-            font-size: 1.5rem;
-        }
-        .contato{
-            width: 80%;  
-        }
+  .perfil-img {
+    width: 90%;
+    background-image: url(/assets/img/fotosobremim.png);
+    background-size: cover;
+    background-position: center;
+    display: none;
+  }
+  .contato-formacao ul {
+    font-size: 1rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
+  }
 
-    
+  .perfil-paragrafo p {
+    font-size: 1rem;
+  }
+
+  #pontos {
+    display: block;
+  }
+  #mais {
+    display: none;
+  }
+
+  #leiamais {
+    display: block;
+    border: none;
+    background: none;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+      rgba(255, 255, 255, 0.9) 0px 0px 0px 1px;
+    color: #fff;
+    height: 30px;
+    width: 60px;
+    border-radius: 2px;
+    margin-top: 10px;
+  }
+  .perfil-paragrafo {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  .perfil-titulo h3 {
+    display: none;
+  }
+  .titulo-mobile {
+    color: #fff;
+    display: block;
+    width: 90%;
+    height: 100px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  .contato {
+    width: 80%;
+  }
 }
 
 /*laptops*/
 @media (min-width: 769px) and (max-width: 1024px) {
+  .container-perfil {
+    width: 100%;
+  }
 
-    .container-perfil{
-        width: 100%;
-    }
+  .perfil-sobre {
+    height: 70%;
+    width: 55%;
+  }
 
-    .perfil-sobre{
-        height: 70%;
-        width: 55%;
-    }
+  .perfil-img {
+    height: 70%;
+    width: 40%;
+  }
 
-    .perfil-img{
-        height: 70%;
-        width: 40%;
-    }
+  .perfil-paragrafo {
+    width: 98%;
+  }
 
-    .perfil-paragrafo{
-        width: 98%;
-    }
+  .perfil-paragrafo p {
+    font-size: 1.1rem;
+  }
 
-    .perfil-paragrafo p{
-        font-size: 1.1rem;
-    }
-
-    .contato-formacao ul{
-        font-size: 1rem;
-    }
-
+  .contato-formacao ul {
+    font-size: 1rem;
+  }
 }
-
-
 
 /*telas grandes*/
 @media (min-width: 1025px) and (max-width: 1200px) {
-    .container-perfil{
-        width: 100%;
-    }
+  .container-perfil {
+    width: 100%;
+  }
 
-    .perfil-sobre{
-        height: 70%;
-        width: 55%;
-    }
+  .perfil-sobre {
+    height: 70%;
+    width: 55%;
+  }
 
-    .perfil-img{
-        height: 70%;
-        width: 40%;
-    }
+  .perfil-img {
+    height: 70%;
+    width: 40%;
+  }
 
-    .perfil-paragrafo{
-        width: 98%;
-    }
-    .perfil-titulo h3{
-        font-size: 2.8rem;
-    }
+  .perfil-paragrafo {
+    width: 98%;
+  }
+  .perfil-titulo h3 {
+    font-size: 2.8rem;
+  }
 
-    .perfil-paragrafo p{
-        font-size: 1.3rem;
-    }
-    .contato-formacao ul{
-        font-size: 1.2rem;
-    }
+  .perfil-paragrafo p {
+    font-size: 1.3rem;
+  }
+  .contato-formacao ul {
+    font-size: 1rem;
+  }
 }
 /*extra grandes*/
 @media (min-width: 1221) {
-
 }
 /*horizontal*/
-@media (orientation: landscape){
-    
+@media (orientation: landscape) {
 }

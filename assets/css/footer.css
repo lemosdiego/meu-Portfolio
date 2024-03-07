@@ -1,433 +1,404 @@
-.footer{
+.footer {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(255, 255, 255, 0.411) 0px 30px 60px -12px inset,
+    rgba(202, 195, 195, 0.3) 0px 18px 36px -18px;
+}
+
+.container-contatos {
+  width: 80%;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario-contato {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.form-titulo {
+  color: #fff;
+  height: 10%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.form-titulo h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.formulario {
+  height: 94%;
+  width: 94%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(255, 254, 254) 0px 1px 3px, rgb(245, 243, 243) 0px 1px 2px;
+}
+
+.formulario form {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formulario form label {
+  color: #fff;
+}
+
+label {
+  margin-top: 4px;
+}
+
+.button-form {
+  width: 90%;
+  height: 40px;
+  margin-top: 10px;
+  width: 110px;
+  border-radius: 10px;
+  background: none;
+  color: #fff;
+  border: none;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(255, 255, 255, 0.9) 0px 0px 0px 1px;
+  cursor: pointer;
+}
+
+.button-form:hover {
+  background-color: #ffffffd3;
+  font-size: 1.4rem;
+  color: black;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+input {
+  color: #fff;
+  border: none;
+  background: none;
+  outline: none;
+  box-shadow: rgb(246, 246, 250) 0px 1px 0px;
+  width: 90%;
+  height: 30px;
+}
+
+textarea {
+  border: none;
+  color: #fff;
+  background: none;
+  resize: none;
+  outline: none;
+  box-shadow: rgb(246, 246, 250) 0px 1px 0px;
+  width: 90%;
+}
+
+.contatos {
+  width: 90%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #0b0a12;
+}
+
+.contato-redes {
+  width: 48%;
+  height: 94%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.contato-adicionais {
+  width: 48%;
+  height: 94%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.redes-titulo {
+  width: 60%;
+  height: 30%;
+}
+
+.redes-titulo h3 {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.contato-icons {
+  width: 70%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.icones {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+.icones:hover {
+  transform: scale(1.4);
+}
+
+.icones a img {
+  width: 100%;
+  height: 100%;
+}
+
+.informacoes-adicionais {
+  width: 60%;
+  height: 30%;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.informacoes-adicionais p {
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .footer {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(255, 255, 255, 0.411) 0px 30px 60px -12px inset, rgba(202, 195, 195, 0.3) 0px 18px 36px -18px 
-}
-
-.container-contatos{
-    width: 80%;
+  }
+  .container-contatos {
+    width: 90%;
     height: 98%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 4px;
     align-items: center;
     justify-content: center;
-}
-
-.formulario-contato{
-    height: 70%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    justify-content: center;
-    
-}
-
-
-.form-titulo{
+  }
+  .formulario-contato {
+    height: 60%;
+  }
+  .form-titulo {
     color: #fff;
     height: 10%;
-    width: 50%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-}
+    font-size: 1.5rem;
+  }
+  .formulario form {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.form-titulo h3{
+  .button-form {
     margin-top: 20px;
-   margin-bottom: 20px;
-}
+  }
 
-.formulario{
-    height: 94%;
-    width: 94%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: rgb(255, 254, 254) 0px 1px 3px, rgb(245, 243, 243) 0px 1px 2px;
-}
-
-.formulario form{
-    width: 70%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.formulario form label{
-    color: #fff;
-}
-
-
-label{
-    margin-top: 4px;
-    font-family: "Dosis", sans-serif;
-}
-
-.button-form{
-    font-family: "Dosis", sans-serif;
-    width: 90%;
-    height: 40px;
-    margin-top: 10px;
-    width: 100px;
-    border-radius: 10px;
-    background: none;
-    color: #fff;
-    border: none;
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.9) 0px 0px 0px 1px;
-    cursor: pointer;
-}
-
-.button-form:hover{
-    background-color: #333;
-}
-
-input{
-    color: #fff;
-    border: none;
-    background: none;
-    outline: none;
-    box-shadow: rgb(246, 246, 250) 0px 1px 0px;
-    width: 90%;
-    height: 30px;
-}
-
-textarea{
-    border: none;
-    color: #fff;
-    background: none;
-    resize: none;
-    outline: none;
-    box-shadow: rgb(246, 246, 250) 0px 1px 0px;
-    width: 90%;
-    
-}
-
-.contatos{
-    width: 90%;
-    height: 30%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: #0b0a12;
-}
-
-.contato-redes{
-    width: 48%;
-    height: 94%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-}
-
-.contato-adicionais{
-    width: 48%;
-    height: 94%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.redes-titulo{
-    width: 60%;
-    height: 30%;
-}
-
-.redes-titulo h3{
-    color: #fff;
-    font-size: 1.8rem;
-}
-
-.contato-icons{
-    width: 70%;
-    height: 40%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-}
-.icones{
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-}
-
-.icones a img{
-    width: 100%;
-    height: 100%;
-}
-
-.informacoes-adicionais{
-   width: 60%;
-   height: 30%; 
-   margin-top: 10px;
-   margin-right: 10px;
-   text-align: right;
-}
-
-.informacoes-adicionais p{
-    color: #fff;
-}
-
-.voltar-topo{
-    width: 60px;
-    height: 60px;
-    margin-right: 20px;
-    border-radius: 50%;
-    margin-top: 10px;
-    
-}
-
-.voltar-topo a img{
-   width: 100%;
-   height: 100%;
-}
-
-
-@media (max-width: 480px) {
-    .footer{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .container-contatos{
-        width: 90%;
-        height: 98%;
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        align-items: center;
-        justify-content: center;
-       
-    
-    }
-    .formulario-contato{
-        height: 60%;
-    }
-    .form-titulo{
-        color: #fff;
-        height: 10%;
-        width: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-    }
-    .formulario form{
-        width: 90%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .button-form{
-        margin-top: 20px;
-    }
-    
-
-   .contatos{
+  .contatos {
     width: 90%;
     display: flex;
     flex-direction: column;
     height: 200px;
-    
-   }
+  }
 
-   .contato-redes{
+  .contato-redes {
     width: 98%;
     height: 50%;
     display: flex;
     align-items: center;
-    
-    }
-   .redes-titulo{
+  }
+  .redes-titulo {
     width: 60%;
     height: 30%;
     display: flex;
     justify-content: center;
-    }
+  }
 
-    .redes-titulo h3{
+  .redes-titulo h3 {
     font-size: 1.5rem;
+  }
 
-    }
-
-    .icones{
-        width: 30px;
-        height: 30px;
-        border-radius: 50px;
-    }
-   .contato-adicionais{
+  .icones {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+  }
+  .contato-adicionais {
     width: 98%;
     height: 50%;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
-   }
-   .contato-adicionais p{
+  }
+  .contato-adicionais p {
     text-align: left;
     margin-left: 10px;
     font-size: 1rem;
-   }
+  }
 
-   .voltar-topo{
+  .voltar-topo {
     width: 50px;
     height: 50px;
     margin-left: 30px;
     border-radius: 50%;
+  }
+  .informacoes-adicionais {
+    margin-left: 10px;
+  }
 
-    }
-    .informacoes-adicionais{
-        margin-left: 10px;
-    }
-
-    input{
-        color: #fff;
-        border: none;
-        background: none;
-        outline: none;
-        box-shadow: rgb(246, 246, 250) 0px 1px 0px;
-        width: 100%;
-        height: 30px;
-    }
-    textarea{
-        width: 100%;
-    }
-    .voltar-topo{
-        display: none;
-    }
-    
+  input {
+    color: #fff;
+    border: none;
+    background: none;
+    outline: none;
+    box-shadow: rgb(246, 246, 250) 0px 1px 0px;
+    width: 100%;
+    height: 30px;
+  }
+  textarea {
+    width: 100%;
+  }
+  .voltar-topo {
+    display: none;
+  }
 }
 
-
 @media (min-width: 481px) and (max-width: 768px) {
-    .footer{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .container-contatos{
-        width: 90%;
-        height: 98%;
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        align-items: center;
-        justify-content: center;
-       
-    
-    }
-    .formulario-contato{
-        height: 60%;
-    }
-    .form-titulo{
-        color: #fff;
-        height: 10%;
-        width: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-    }
-    .formulario form{
-        width: 90%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+  .footer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-contatos {
+    width: 90%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+  }
+  .formulario-contato {
+    height: 60%;
+  }
+  .form-titulo {
+    color: #fff;
+    height: 10%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  .formulario form {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .button-form{
-        margin-top: 20px;
-    }
-    
+  .button-form {
+    margin-top: 20px;
+  }
 
-   .contatos{
+  .contatos {
     width: 100%;
     display: flex;
     flex-direction: column;
     height: 40%;
-    
-   }
+  }
 
-   .contato-redes{
+  .contato-redes {
     width: 98%;
     height: 50%;
     display: flex;
     align-items: center;
-    
-    }
-   .redes-titulo{
+  }
+  .redes-titulo {
     width: 60%;
     height: 30%;
     display: flex;
     justify-content: center;
-    }
+  }
 
-    .redes-titulo h3{
+  .redes-titulo h3 {
     font-size: 2rem;
+  }
 
-    }
-
-    .icones{
-        width: 40px;
-        height: 40px;
-        border-radius: 50px;
-    }
-   .contato-adicionais{
+  .icones {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+  }
+  .contato-adicionais {
     width: 98%;
     height: 50%;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
-   }
-   .contato-adicionais p{
+  }
+  .contato-adicionais p {
     text-align: left;
     margin-left: 10px;
-   }
+  }
 
-   .voltar-topo{
+  .voltar-topo {
     width: 50px;
     height: 50px;
     margin-left: 30px;
     border-radius: 50%;
+  }
+  .informacoes-adicionais {
+    margin-left: 10px;
+  }
 
-    }
-    .informacoes-adicionais{
-        margin-left: 10px;
-    }
-
-    input{
-        color: #fff;
-        border: none;
-        background: none;
-        outline: none;
-        box-shadow: rgb(246, 246, 250) 0px 1px 0px;
-        width: 100%;
-        height: 30px;
-    }
-    textarea{
-        width: 100%;
-    }
-    .voltar-topo{
-        display: none;
-    }
+  input {
+    color: #fff;
+    border: none;
+    background: none;
+    outline: none;
+    box-shadow: rgb(246, 246, 250) 0px 1px 0px;
+    width: 100%;
+    height: 30px;
+  }
+  textarea {
+    width: 100%;
+  }
+  .voltar-topo {
+    display: none;
+  }
 }

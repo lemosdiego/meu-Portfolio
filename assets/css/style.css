@@ -1,20 +1,18 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: "Dosis", "Roboto", Arial, Helvetica, sans-serif;
-    
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Dosis", "Roboto", Arial, Helvetica, sans-serif;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    overflow-x: hidden;
-    background: #010127;
+body {
+  overflow-x: hidden;
+  background: #010127;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-
