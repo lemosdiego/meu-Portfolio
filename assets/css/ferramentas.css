@@ -1,289 +1,508 @@
-.container-ferramentas {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 3px;
-  box-shadow: rgba(255, 255, 255, 0.411) 0px 30px 60px -12px inset,
-    rgba(202, 195, 195, 0.3) 0px 18px 36px -18px;
-}
-
-.ferramentas {
-  width: 60%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2px;
-}
-
-.skills {
-  width: 30%;
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-}
-
-.skills-titulo {
-  width: 90%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.skills-titulo h3 {
-  color: #fff;
-  font-size: 2.4rem;
-  margin-top: 20px;
-}
-
-.lista-skills ul li {
-  color: #fff;
-  text-align: left;
-  list-style: disc;
-}
-
-.lista-skills ul {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  font-size: 1.5rem;
-}
-
-.lista-skills {
-  width: 90%;
-  height: 60%;
-  display: flex;
-  justify-content: center;
-}
-
-.ferramentas-titulo {
-  height: 8%;
-}
-
-.ferramentas-titulo h3 {
-  color: #fff;
-  font-size: 2.8rem;
-  margin-top: 20px;
-  padding: 10px;
-}
-
-.ferramentas-nivel {
-  height: 90%;
-  display: flex;
-  flex-direction: row;
-}
-
-.ferramentas-card {
-  width: 50%;
-  height: 45px;
-}
-
-.niveis {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-.card-niveis {
-  width: 90%;
-  height: 60px;
-  border-radius: 4px;
-  display: flex;
-  box-shadow: rgba(250, 250, 250, 0.979) 0px 0px 0px 1px inset,
-    rgba(236, 232, 232, 0.9) 0px 0px 0px 1px;
-}
-.card-niveis div {
-  height: 100%;
-  background: #333;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  border-radius: 4px;
-}
-.card-niveis div:hover {
-  transform: scale(1.2);
-}
-
-.card-niveis div p {
-  font-size: 1.1rem;
-  margin-left: 10px;
-  color: #fff;
-}
-
-@media (max-width: 480px) {
+@media (min-width: 1201px) and (max-width: 1600px) {
   .container-ferramentas {
-    width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 3px;
   }
   .ferramentas {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .ferramentas-titulo {
+    height: 20%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+  .ferramentas-titulo h3 {
+    color: #fff;
+    font-size: 3.8rem;
+  }
+  .ferramentas-nivel {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+  }
+  .niveis {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .card-niveis {
+    width: 90%;
+    height: 60px;
+  }
+  .card-niveis div {
+    height: 100%;
+  }
+  .card-niveis div:hover {
+    transform: scale(1.2);
+  }
+  .card-niveis div p {
+    color: #fff;
+    font-size: 1.3rem;
+  }
+  .skills {
+    width: 40%;
+    height: 90%;
+  }
+  .skills-titulo {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills-titulo h3 {
+    color: #fff;
+    font-size: 2.8rem;
+  }
+  .lista-skills {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+  }
+  .lista-skills ul {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  .lista-skills ul li {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1601px) {
+  .container-ferramentas {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+  .ferramentas {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .ferramentas-titulo {
+    height: 20%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+  .ferramentas-titulo h3 {
+    color: #fff;
+    font-size: 4rem;
+  }
+  .ferramentas-nivel {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+  }
+  .niveis {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .card-niveis {
+    width: 90%;
+    height: 100px;
+  }
+  .card-niveis div {
+    height: 100%;
+  }
+  .card-niveis div:hover {
+    transform: scale(1.2);
+  }
+  .card-niveis div p {
+    color: #fff;
+    font-size: 1.7rem;
+  }
+  .skills {
+    width: 40%;
+    height: 90%;
+  }
+  .skills-titulo {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills-titulo h3 {
+    color: #fff;
+    font-size: 3.2rem;
+  }
+  .lista-skills {
+    padding-top: 30px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .lista-skills ul {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  .lista-skills ul li {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-ferramentas {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+  }
+  .ferramentas {
     width: 90%;
     height: 60%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2px;
     align-items: center;
+    flex-direction: column;
   }
-
-  .skills {
-    width: 90%;
-    height: 30%;
-  }
-
   .ferramentas-titulo {
-    height: 14%;
-    width: 90%;
+    height: 20%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
   .ferramentas-titulo h3 {
     color: #fff;
     font-size: 2rem;
   }
-
   .ferramentas-nivel {
-    height: 84%;
     width: 100%;
-  }
-  .niveis {
-    width: 100%;
-  }
-
-  .card-niveis {
-    width: 98%;
-  }
-  .card-niveis div p {
-    font-size: 0.9rem;
-    margin-left: 10px;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .container-ferramentas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .ferramentas {
-    width: 90%;
-    height: 60%;
-  }
-  .ferramentas-titulo {
-    height: 15%;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .ferramentas-titulo h3 {
-    font-size: 2rem;
-  }
-
-  .niveis {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .skills {
-    width: 90%;
-    height: 250%;
-  }
-}
-
-/*laptops*/
-@media (min-width: 769px) and (max-width: 1024px) {
-  .container-ferramentas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .ferramentas {
-    width: 90%;
-    height: 60%;
-  }
-  .ferramentas-titulo {
-    height: 15%;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .ferramentas-titulo h3 {
-    font-size: 2rem;
-  }
-
-  .niveis {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .skills {
-    width: 70%;
-    height: 40%;
-  }
-
-  .lista-skills {
-    display: flex;
-    justify-content: flex-start;
-    width: 90%;
-  }
-
-  .skills-titulo {
-    display: flex;
-    justify-content: flex-start;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1200px) {
-  .container-ferramentas {
+    height: 80%;
     display: flex;
     flex-direction: row;
-    height: 90vh;
   }
-  .ferramentas-nivel {
+  .niveis {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .card-niveis {
+    width: 90%;
+    height: 60px;
+  }
+  .card-niveis div {
+    height: 100%;
+  }
+  .card-niveis div:hover {
+    transform: scale(1.2);
+  }
+  .card-niveis div p {
+    color: #fff;
+    font-size: 1rem;
+  }
+  .skills {
+    height: 40%;
+    width: 90%;
+  }
+  .skills-titulo {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills-titulo h3 {
+    color: #fff;
+    font-size: 2rem;
+  }
+  .lista-skills {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .lista-skills ul {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  .lista-skills ul li {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .container-ferramentas {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+  }
+  .ferramentas {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .ferramentas-titulo {
-    width: 50%;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .ferramentas-titulo h3 {
+    color: #fff;
     font-size: 3rem;
   }
   .ferramentas-nivel {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+  }
+  .niveis {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .card-niveis {
+    width: 90%;
+    height: 60px;
+  }
+  .card-niveis div {
+    height: 100%;
+  }
+  .card-niveis div:hover {
+    transform: scale(1.2);
+  }
+  .card-niveis div p {
+    color: #fff;
+    font-size: 1rem;
+  }
+  .skills {
+    height: 40%;
+    width: 90%;
+  }
+  .skills-titulo {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills-titulo h3 {
+    color: #fff;
+    font-size: 2.5rem;
+  }
+  .lista-skills {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .lista-skills ul {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  .lista-skills ul li {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container-ferramentas {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+  }
+  .ferramentas {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .ferramentas-titulo {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ferramentas-titulo h3 {
+    color: #fff;
+    font-size: 3.8rem;
+  }
+  .ferramentas-nivel {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+  }
+  .niveis {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .card-niveis {
+    width: 90%;
+    height: 80px;
+  }
+  .card-niveis div {
+    height: 100%;
+  }
+  .card-niveis div:hover {
+    transform: scale(1.2);
+  }
+  .card-niveis div p {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .skills {
+    height: 40%;
+    width: 90%;
+  }
+  .skills-titulo {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills-titulo h3 {
+    color: #fff;
+    font-size: 3.2rem;
+  }
+  .lista-skills {
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .lista-skills ul {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  .lista-skills ul li {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .container-ferramentas {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+  .ferramentas {
+    width: 60%;
     height: 90%;
     display: flex;
     align-items: center;
+    flex-direction: column;
+  }
+  .ferramentas-titulo {
+    height: 20%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+  .ferramentas-titulo h3 {
+    color: #fff;
+    font-size: 4rem;
+  }
+  .ferramentas-nivel {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
   }
   .niveis {
-    height: 70%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .card-niveis {
+    width: 90%;
+    height: 80px;
+  }
+  .card-niveis div {
+    height: 100%;
+  }
+  .card-niveis div:hover {
+    transform: scale(1.2);
+  }
+  .card-niveis div p {
+    color: #fff;
+    font-size: 1.3rem;
   }
   .skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
+    width: 40%;
+    height: 90%;
   }
   .skills-titulo {
-  }
-  .ferramentas {
+    width: 100%;
+    height: 30%;
     display: flex;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills-titulo h3 {
+    color: #fff;
+    font-size: 3.5rem;
+  }
+  .lista-skills {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+  }
+  .lista-skills ul {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  .lista-skills ul li {
+    font-size: 2.5rem;
   }
 }

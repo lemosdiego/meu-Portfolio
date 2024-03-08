@@ -1,404 +1,599 @@
-.footer {
-  width: 100%;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: rgba(255, 255, 255, 0.411) 0px 30px 60px -12px inset,
-    rgba(202, 195, 195, 0.3) 0px 18px 36px -18px;
-}
-
-.container-contatos {
-  width: 80%;
-  height: 98%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-}
-
-.formulario-contato {
-  height: 70%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  justify-content: center;
-}
-
-.form-titulo {
-  color: #fff;
-  height: 10%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-}
-
-.form-titulo h3 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.formulario {
-  height: 94%;
-  width: 94%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: rgb(255, 254, 254) 0px 1px 3px, rgb(245, 243, 243) 0px 1px 2px;
-}
-
-.formulario form {
-  width: 70%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.formulario form label {
-  color: #fff;
-}
-
-label {
-  margin-top: 4px;
-}
-
-.button-form {
-  width: 90%;
-  height: 40px;
-  margin-top: 10px;
-  width: 110px;
-  border-radius: 10px;
-  background: none;
-  color: #fff;
-  border: none;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
-    rgba(255, 255, 255, 0.9) 0px 0px 0px 1px;
-  cursor: pointer;
-}
-
-.button-form:hover {
-  background-color: #ffffffd3;
-  font-size: 1.4rem;
-  color: black;
-  font-weight: 900;
-  text-shadow: 2px 2px 4px rgb(0, 0, 0);
-}
-
-input {
-  color: #fff;
-  border: none;
-  background: none;
-  outline: none;
-  box-shadow: rgb(246, 246, 250) 0px 1px 0px;
-  width: 90%;
-  height: 30px;
-}
-
-textarea {
-  border: none;
-  color: #fff;
-  background: none;
-  resize: none;
-  outline: none;
-  box-shadow: rgb(246, 246, 250) 0px 1px 0px;
-  width: 90%;
-}
-
-.contatos {
-  width: 90%;
-  height: 30%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  background-color: #0b0a12;
-}
-
-.contato-redes {
-  width: 48%;
-  height: 94%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-
-.contato-adicionais {
-  width: 48%;
-  height: 94%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.redes-titulo {
-  width: 60%;
-  height: 30%;
-}
-
-.redes-titulo h3 {
-  color: #fff;
-  font-size: 1.8rem;
-}
-
-.contato-icons {
-  width: 70%;
-  height: 40%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.icones {
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-}
-.icones:hover {
-  transform: scale(1.4);
-}
-
-.icones a img {
-  width: 100%;
-  height: 100%;
-}
-
-.informacoes-adicionais {
-  width: 60%;
-  height: 30%;
-  margin-top: 10px;
-  margin-right: 10px;
-  text-align: right;
-}
-
-.informacoes-adicionais p {
-  color: #fff;
-}
-
-@media (max-width: 480px) {
+@media (min-width: 1201px) and (max-width: 1600px) {
   .footer {
-    width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    box-shadow: rgba(249, 249, 252, 0.904) 0px 30px 60px -12px inset,
+      rgb(252, 249, 249) 0px 18px 36px -18px inset;
   }
   .container-contatos {
     width: 90%;
-    height: 98%;
+    height: 60%;
     display: flex;
-    flex-direction: column;
-    gap: 4px;
     align-items: center;
     justify-content: center;
   }
   .formulario-contato {
-    height: 60%;
-  }
-  .form-titulo {
-    color: #fff;
-    height: 10%;
-    width: 90%;
+    width: 70%;
+    height: 90%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    gap: 4px;
+  }
+  .form-titulo {
+    width: 70%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+  }
+  .form-titulo h3 {
+    color: #fff;
+    font-size: 2.5rem;
+  }
+  .formulario {
+    width: 70%;
+    height: 80%;
   }
   .formulario form {
-    width: 90%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    color: #fff;
+    gap: 4px;
     justify-content: center;
   }
-
-  .button-form {
-    margin-top: 20px;
-  }
-
-  .contatos {
+  .formulario form input {
+    background: none;
     width: 90%;
+    height: 20px;
+    color: #fff;
+    outline: none;
+    border: none;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  }
+  .text-area {
+    width: 90%;
+  }
+  .text-area textarea {
+    background: none;
+    outline: 0;
+    resize: none;
+    border: none;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    width: 300px;
+    color: #fff;
+  }
+  .formulario button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  .formulario button:hover {
+    transform: scale(1.1);
+  }
+  .rodape {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .rodape-icones {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .rodape-icones img {
+    width: 100%;
+    height: 100%;
+  }
+  .rodape-icones:hover {
+    transform: scale(1.1);
+  }
+}
+@media (min-width: 1601px) {
+  .footer {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    height: 200px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(249, 249, 252, 0.904) 0px 30px 60px -12px inset,
+      rgb(252, 249, 249) 0px 18px 36px -18px inset;
   }
-
-  .contato-redes {
-    width: 98%;
-    height: 50%;
+  .container-contatos {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .formulario-contato {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .form-titulo {
+    width: 80%;
+    height: 20%;
     display: flex;
     align-items: center;
   }
-  .redes-titulo {
-    width: 60%;
-    height: 30%;
+  .form-titulo h3 {
+    color: #fff;
+    font-size: 3.2rem;
+  }
+  .formulario {
+    width: 80%;
+    height: 80%;
+  }
+  .formulario form {
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 4px;
     justify-content: center;
+    font-size: 1.4rem;
   }
-
-  .redes-titulo h3 {
-    font-size: 1.5rem;
+  .formulario form input {
+    background: none;
+    width: 90%;
+    height: 40px;
+    color: #fff;
+    outline: none;
+    border: none;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
   }
-
-  .icones {
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-  }
-  .contato-adicionais {
-    width: 98%;
-    height: 50%;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-  }
-  .contato-adicionais p {
-    text-align: left;
-    margin-left: 10px;
-    font-size: 1rem;
-  }
-
-  .voltar-topo {
-    width: 50px;
-    height: 50px;
-    margin-left: 30px;
-    border-radius: 50%;
-  }
-  .informacoes-adicionais {
-    margin-left: 10px;
-  }
-
-  input {
+  .text-area textarea {
+    background: none;
+    outline: 1;
+    resize: none;
+    width: 90%;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    width: 300px;
     color: #fff;
     border: none;
+  }
+  .formulario button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  .formulario button:hover {
+    transform: scale(1.1);
+  }
+  .rodape {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .rodape-icones {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .rodape-icones img {
+    width: 100%;
+    height: 100%;
+  }
+  .rodape-icones:hover {
+    transform: scale(1.1);
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .footer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(249, 249, 252, 0.904) 0px 30px 60px -12px inset,
+      rgb(252, 249, 249) 0px 18px 36px -18px inset;
+  }
+  .container-contatos {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .formulario-contato {
+    width: 99%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .form-titulo {
+    width: 94%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-titulo h3 {
+    color: #fff;
+    font-size: 2rem;
+  }
+  .formulario {
+    width: 94%;
+    height: 80%;
+  }
+  .formulario form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 4px;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+  .formulario form input {
     background: none;
-    outline: none;
-    box-shadow: rgb(246, 246, 250) 0px 1px 0px;
-    width: 100%;
+    width: 90%;
     height: 30px;
+    color: #fff;
+    outline: none;
+    border: none;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
   }
-  textarea {
+  .text-area textarea {
+    background: none;
+    outline: 0;
+    border: none;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    width: 300px;
+    color: #fff;
+  }
+  .formulario button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .formulario button:hover {
+    transform: scale(1.1);
+  }
+  .rodape {
     width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
   }
-  .voltar-topo {
-    display: none;
+  .rodape-icones {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  .rodape-icones img {
+    width: 100%;
+    height: 100%;
+  }
+  .rodape-icones:hover {
+    transform: scale(1.1);
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   .footer {
-    width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    box-shadow: rgba(249, 249, 252, 0.904) 0px 30px 60px -12px inset,
+      rgb(252, 249, 249) 0px 18px 36px -18px inset;
   }
   .container-contatos {
-    width: 90%;
-    height: 98%;
+    width: 100%;
+    height: 80%;
     display: flex;
-    flex-direction: column;
-    gap: 4px;
     align-items: center;
     justify-content: center;
   }
   .formulario-contato {
-    height: 60%;
+    width: 99%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
   }
   .form-titulo {
-    color: #fff;
+    width: 94%;
     height: 10%;
-    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+  }
+  .form-titulo h3 {
+    color: #fff;
+    font-size: 2rem;
+  }
+  .formulario {
+    width: 94%;
+    height: 80%;
   }
   .formulario form {
-    width: 90%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    color: #fff;
+    gap: 4px;
     justify-content: center;
+    font-size: 1.2rem;
   }
-
-  .button-form {
+  .formulario form input {
+    background: none;
+    width: 90%;
+    height: 30px;
+    color: #fff;
+    outline: none;
+    border: none;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  }
+  .text-area textarea {
+    background: none;
+    outline: 0;
+    border: none;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    width: 300px;
+    color: #fff;
+  }
+  .formulario button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
     margin-top: 20px;
   }
-
-  .contatos {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: 40%;
+  .formulario button:hover {
+    transform: scale(1.1);
   }
-
-  .contato-redes {
-    width: 98%;
-    height: 50%;
+  .rodape {
+    width: 100%;
+    height: 20%;
     display: flex;
     align-items: center;
-  }
-  .redes-titulo {
-    width: 60%;
-    height: 30%;
-    display: flex;
     justify-content: center;
+    gap: 20px;
   }
-
-  .redes-titulo h3 {
-    font-size: 2rem;
-  }
-
-  .icones {
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-  }
-  .contato-adicionais {
-    width: 98%;
-    height: 50%;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-  }
-  .contato-adicionais p {
-    text-align: left;
-    margin-left: 10px;
-  }
-
-  .voltar-topo {
+  .rodape-icones {
     width: 50px;
     height: 50px;
-    margin-left: 30px;
     border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 40px;
   }
-  .informacoes-adicionais {
-    margin-left: 10px;
+  .rodape-icones img {
+    width: 100%;
+    height: 100%;
   }
-
-  input {
+  .rodape-icones:hover {
+    transform: scale(1.1);
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(249, 249, 252, 0.904) 0px 30px 60px -12px inset,
+      rgb(252, 249, 249) 0px 18px 36px -18px inset;
+  }
+  .container-contatos {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .formulario-contato {
+    width: 99%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .form-titulo {
+    width: 94%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-titulo h3 {
     color: #fff;
-    border: none;
+    font-size: 3rem;
+  }
+  .formulario {
+    width: 94%;
+    height: 80%;
+  }
+  .formulario form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 4px;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  .formulario form input {
     background: none;
-    outline: none;
-    box-shadow: rgb(246, 246, 250) 0px 1px 0px;
-    width: 100%;
+    width: 90%;
     height: 30px;
+    color: #fff;
+    outline: none;
+    border: none;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
   }
-  textarea {
+  .text-area textarea {
+    background: none;
+    outline: 0;
+    border: none;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    width: 300px;
+    color: #fff;
+  }
+  .formulario button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .formulario button:hover {
+    transform: scale(1.1);
+  }
+  .rodape {
     width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
   }
-  .voltar-topo {
-    display: none;
+  .rodape-icones {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 40px;
+  }
+  .rodape-icones img {
+    width: 100%;
+    height: 100%;
+  }
+  .rodape-icones:hover {
+    transform: scale(1.1);
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .footer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(249, 249, 252, 0.904) 0px 30px 60px -12px inset,
+      rgb(252, 249, 249) 0px 18px 36px -18px inset;
+  }
+  .container-contatos {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .formulario-contato {
+    width: 99%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .form-titulo {
+    width: 94%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-titulo h3 {
+    color: #fff;
+    font-size: 3.5rem;
+  }
+  .formulario {
+    width: 94%;
+    height: 70%;
+  }
+  .formulario form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 4px;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  .formulario form input {
+    background: none;
+    width: 90%;
+    height: 40px;
+    color: #fff;
+    outline: none;
+    border: none;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  }
+  .text-area textarea {
+    background: none;
+    outline: 0;
+    border: none;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    width: 300px;
+    color: #fff;
+  }
+  .formulario button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  .formulario button:hover {
+    transform: scale(1.1);
+  }
+  .rodape {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .rodape-icones {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .rodape-icones img {
+    width: 100%;
+    height: 100%;
+  }
+  .rodape-icones:hover {
+    transform: scale(1.1);
   }
 }

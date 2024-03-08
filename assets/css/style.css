@@ -16,3 +16,17 @@ body {
 li {
   list-style: none;
 }
+
+.conteudo {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.conteudo::-webkit-scrollbar {
+  display: none;
+}
+
+/*Ferramentas*/
+.card-niveis {
+  border: solid 1px #fff;
+}

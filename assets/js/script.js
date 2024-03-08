@@ -45,13 +45,13 @@ function leiaMais() {
 //Projetos
 
 function moverEsquerda() {
-  let container = document.querySelector(".container-card");
+  let container = document.querySelector(".conteudo");
   container.scrollLeft -= 300;
 }
 
 function moverDireita() {
   let buttonEsquerdo = document.querySelector(".esquerda");
-  let container = document.querySelector(".container-card");
+  let container = document.querySelector(".conteudo");
   container.scrollLeft += 300;
   buttonEsquerdo.style.display = "block";
 }

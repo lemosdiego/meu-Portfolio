@@ -106,66 +106,60 @@
             <h3>Sobre mim</h3>
         </div>
     </div>
-    <div class="container-principal" id="projetos">
-        <div id="mover-esquerda" class="icon-navegacao esquerda">
-            <img src="/assets/img/setaesquerdabranca.svg" alt>
+    <section class="projetos" id="projetos">
+        <div class="titulo">
+            <h2>Projetos</h2>
         </div>
-        <div class="container-secundario">
-            <div class="projetos-titulo">
-                <h3>Projetos</h3>
+        <button class="esquerda" id="mover-esquerda">
+            <img src="/assets/img/setaesquerdabranca.svg" alt>
+        </button>
+        <div class="conteudo">
+            <div class="container-card">
+                <div class="cards">
+                    <div class="img">
+                        <img src="/assets/img/projeto1.jpeg" alt>
+                    </div>
+                    <div class="subtitulo">
+                        <h3>Fynd My Beer</h3>
+                    </div>
+                </div>
             </div>
             <div class="container-card">
-                <div class="cards" onmouseover="aparecerInformacoes()"
-                    onmouseout="desaparecerInformacoes()">
-                    <div class="card-img img1">
-
+                <div class="cards">
+                    <div class="img">
+                        <img src alt>
                     </div>
-                    <div class="card-titulo">
-
-                    </div>
-                    <div class="informacoes">
-                        <a href>SAIBA MAIS</a>
+                    <div class="subtitulo">
+                        <h3>Fynd My Beer</h3>
                     </div>
                 </div>
+            </div>
+            <div class="container-card">
                 <div class="cards">
-                    <div class="card-img">
-
+                    <div class="img">
+                        <img src alt>
                     </div>
-                    <div class="card-titulo">
-
+                    <div class="subtitulo">
+                        <h3>Fynd My Beer</h3>
                     </div>
                 </div>
+            </div>
+            <div class="container-card">
                 <div class="cards">
-                    <div class="card-img">
-
+                    <div class="img">
+                        <img src alt>
                     </div>
-                    <div class="card-titulo">
-
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="card-img">
-
-                    </div>
-                    <div class="card-titulo">
-
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="card-img">
-
-                    </div>
-                    <div class="card-titulo">
-
+                    <div class="subtitulo">
+                        <h3>Fynd My Beer</h3>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="mover-direita" class="icon-navegacao direita">
+        <button class="direita" id="mover-direita">
             <img src="/assets/img/setadireitabranca.svg" alt>
-        </div>
-    </div>
-    <div class="container-ferramentas" id="ferramentas">
+        </button>
+    </section>
+    <section class="container-ferramentas" id="ferramentas">
         <div class="ferramentas">
             <div class="ferramentas-titulo">
                 <h3>Ferramentas</h3>
@@ -241,7 +235,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </section>
     <footer class="footer" id="footer">
         <div class="container-contatos">
             <div class="formulario-contato">
@@ -265,55 +259,28 @@
                         <input type="email" id="inputEmail" name="email"
                             required maxlength="40">
                         <label for="textAreaMensagem">Mensagem</label>
-                        <div class="text-area"><textarea name="message"
+                        <div class="text-area">
+                            <textarea name="message"
                                 id="textAreaMensagem" required maxlength="100"
-                                cols="50" rows="4"></textarea></div>
+                                cols="50" rows="4">
+                            </textarea>
+                        </div>
                         <button class="button-form">Enviar</button>
                     </div>
                 </div>
-                <div class="contatos">
-                    <div class="contato-redes">
-                        <div class="redes-titulo">
-                            <h3>Redes</h3>
-                        </div>
-                        <div class="contato-icons">
-                            <div class="icones">
-                                <a
-                                    href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-                                    target="_blank">
-                                    <img src="/assets/img/linkedin.svg"
-                                        alt="Linkedin">
-                                </a>
-                            </div>
-                            <div class="icones">
-                                <a href="https://github.com/lemosdiego"
-                                    target="_blank">
-                                    <img src="/assets/img/github.svg"
-                                        alt="Github">
-                                </a>
-                            </div>
-                            <div class="icones">
-                                <a href="https://WA.me/5581982383803"
-                                    target="_blank">
-                                    <img src="/assets/img/whatsapp.svg"
-                                        alt="WhatsApp">
-                                </a>
-                            </div>
-                            <div class="icones">
-                                <a href="https://ig.me/m/washington.lemos_"
-                                    target="_blank">
-                                    <img src="/assets/img/instagram.svg"
-                                        alt="Instagram">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contato-adicionais">
-                        <div class="informacoes-adicionais">
-                            <p>washington.contato1327@gmail.com</p>
-                            <p>São Paulo-SP</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="rodape">
+                <div class="rodape-icones">
+                    <img src="/assets/img/linkedin.svg" alt="Linkedin">
+                </div>
+                <div class="rodape-icones">
+                    <img src="/assets/img/github.svg" alt="Github">
+                </div>
+                <div class="rodape-icones">
+                    <img src="/assets/img/whatsapp.svg" alt="Whatsapp">
+                </div>
+                <div class="rodape-icones">
+                    <img src="/assets/img/instagram.svg" alt="Instagram">
                 </div>
             </div>
         </footer>
@@ -337,6 +304,7 @@
                         alt></a>
             </div>
         </div>
+
         <script src="/assets/js/script.js"></script>
     </body>
 </html>
