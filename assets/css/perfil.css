@@ -1,352 +1,672 @@
-.container-perfil {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  box-shadow: rgba(255, 255, 255, 0.411) 0px 30px 60px -12px inset,
-    rgba(202, 195, 195, 0.3) 0px 18px 36px -18px inset;
-}
-
-.perfil-sobre {
-  width: 50%;
-  height: 80%;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  text-align: justify;
-  justify-content: flex-start;
-}
-
-.perfil-titulo h3 {
-  font-size: 2rem;
-}
-
-#leiamais {
-  display: none;
-}
-
-.perfil-paragrafo {
-  width: 90%;
-}
-
-.perfil-paragrafo p {
-  font-size: 1.3rem;
-}
-
-.perfil-img {
-  position: relative;
-  width: 34%;
-  height: 80%;
-  background-image: url(/assets/img/fotosobremim.png);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  box-shadow: rgb(255, 253, 253) 0px 2px 4px,
-    rgb(255, 252, 252) 0px 7px 13px -3px, rgb(255, 255, 255) 0px -3px 0px inset;
-  opacity: 8;
-  margin-top: 10px;
-}
-#pontos {
-  display: none;
-}
-.sombra {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.perfil-social {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.perfil-social button {
-  color: #fff;
-  height: 40px;
-  width: 100px;
-  text-transform: uppercase;
-  border-radius: 4px;
-  cursor: pointer;
-  background: none;
-  border: none;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
-    rgba(255, 255, 255, 0.9) 0px 0px 0px 1px;
-}
-
-.contato {
-  width: 80%;
-  height: 200px;
-  display: flex;
-  flex-direction: row;
-  gap: 4px;
-  flex-direction: column;
-}
-.contato-titulo {
-  height: 40px;
-  width: 80%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.text-animacao {
-  opacity: 0;
-  animation: surgir 10s ease forwards;
-}
-@keyframes surgir {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.contato-titulo h3 {
-  font-size: 1.4rem;
-}
-
-.contato-formacao ul {
-  font-size: 1.2rem;
-  font-style: italic;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
-}
-
-.titulo-mobile {
-  display: none;
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .container-perfil {
-    display: flex;
-    flex-direction: column-reverse;
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .perfil {
+    border: solid 1px #fff;
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
     gap: 10px;
   }
   .perfil-sobre {
-    width: 90%;
-  }
-  .perfil-paragrafo {
-    font-size: 1.3rem;
-    width: 100%;
-  }
-  .perfil-titulo h3 {
-    display: none;
-  }
-  .perfil-img {
-    width: 70%;
-    background-image: url(/assets/img/sobremimmobile.png);
-    background-size: cover;
-    background-position: center;
-  }
-  .titulo-mobile {
-    color: #fff;
-    display: block;
-    width: 90%;
-    height: 100px;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.5rem;
-  }
-  .contato {
-    width: 80%;
-  }
-  .contato-formacao ul {
-    font-size: 1rem;
-    text-align: justify;
+    border: solid 1px #fff;
+    width: 55%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     gap: 4px;
-    font-style: italic;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
   }
-
-  .perfil-paragrafo p {
-    font-size: 1rem;
-  }
-
-  #pontos {
-    display: block;
-  }
-  #mais {
-    display: none;
-  }
-
-  #leiamais {
-    display: block;
-    border: none;
-    background: none;
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
-      rgba(255, 255, 255, 0.9) 0px 0px 0px 1px;
-    color: #fff;
-    height: 30px;
-    width: 60px;
-    border-radius: 2px;
-    margin-top: 10px;
-  }
-  .perfil-paragrafo {
-    font-size: 1.3rem;
+  .perfil-titulo {
+    border: solid 1px #fff;
     width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .perfil-titulo h3 {
-    display: none;
-  }
-  .titulo-mobile {
     color: #fff;
-    display: block;
+    font-size: 3.3rem;
+  }
+  .perfil-paragrafo {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .perfil-paragrafo p {
     width: 90%;
-    height: 100px;
-    text-align: center;
-    margin-top: 20px;
+    color: #fff;
+    text-align: justify;
+    font-size: 1.3rem;
+  }
+  .extra {
+    border: solid 1px #fff;
+    width: 70%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .extra-titulo {
+    border: solid 1px #fff;
+    width: 50%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+  }
+  .extra-titulo h3 {
+    color: #fff;
     font-size: 1.5rem;
   }
-  .contato {
-    width: 80%;
+  .extra-formacao {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .extra-formacao ul {
+    color: #fff;
+    text-align: justify;
+    font-size: 1rem;
+  }
+  .perfil-img {
+    border: solid 1px #fff;
+    width: 45%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .foto-perfil {
+    border: solid 1px #fff;
+    height: 94%;
+    width: 70%;
+    border-radius: 50px 20px 50px 20px;
+  }
+  .foto-perfil img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px 20px 50px 20px;
+    box-shadow: rgb(255, 255, 255) 0px 2px 4px,
+      rgb(255, 252, 252) 0px 7px 13px -3px,
+      rgba(255, 255, 255, 0.89) 0px -3px 0px inset;
+  }
+
+  .titulo-mobile {
+    display: none;
+  }
+  #leiamais {
+    display: none;
+  }
+  #pontos {
+    display: none;
   }
 }
-
-/*tablets*/
-@media (min-width: 481px) and (max-width: 768px) {
-  .container-perfil {
-    display: flex;
-    flex-direction: column-reverse;
+@media (min-width: 1601px) {
+  .perfil {
+    border: solid 1px #fff;
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
     gap: 10px;
   }
-
   .perfil-sobre {
-    width: 90%;
-  }
-
-  .perfil-img {
-    width: 70%;
-    background-image: url(/assets/img/fotosobremim.png);
-    background-size: cover;
-    background-position: center;
-  }
-  .contato-formacao ul {
-    font-size: 1rem;
-    text-align: justify;
+    border: solid 1px #fff;
+    width: 55%;
+    height: 88%;
     display: flex;
     flex-direction: column;
-    font-style: italic;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
+    gap: 8px;
   }
-
+  .perfil-titulo {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .perfil-titulo h3 {
+    color: #fff;
+    font-size: 5rem;
+  }
+  .perfil-paragrafo {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+  }
   .perfil-paragrafo p {
-    font-size: 1.3rem;
+    width: 90%;
+    color: #fff;
+    text-align: justify;
+    font-size: 1.8rem;
+  }
+  .extra {
+    border: solid 1px #fff;
+    width: 70%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .extra-titulo {
+    border: solid 1px #fff;
+    width: 50%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+  }
+  .extra-titulo h3 {
+    color: #fff;
+    font-size: 3rem;
+  }
+  .extra-formacao {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .extra-formacao ul {
+    color: #fff;
+    text-align: justify;
+    font-size: 1.5rem;
+  }
+  .perfil-img {
+    border: solid 1px #fff;
+    width: 45%;
+    height: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .foto-perfil {
+    border: solid 1px #fff;
+    height: 94%;
+    width: 70%;
+    border-radius: 50px 20px 50px 20px;
+  }
+  .foto-perfil img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px 20px 50px 20px;
+    box-shadow: rgb(255, 255, 255) 0px 2px 4px,
+      rgb(255, 252, 252) 0px 7px 13px -3px,
+      rgba(255, 255, 255, 0.89) 0px -3px 0px inset;
   }
 
+  .titulo-mobile {
+    display: none;
+  }
+  #leiamais {
+    display: none;
+  }
   #pontos {
-    display: block;
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .perfil {
+    border: solid 1px #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+  }
+  .perfil-sobre {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .perfil-titulo {
+    display: none;
+  }
+  .titulo-mobile {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .titulo-mobile h3 {
+    color: #fff;
+    font-size: 2.2rem;
+  }
+
+  .perfil-paragrafo {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .perfil-paragrafo p {
+    width: 90%;
+    color: #fff;
+    text-align: justify;
+    font-size: 1.1rem;
+  }
+  .extra {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .extra-titulo {
+    border: solid 1px #fff;
+    width: 50%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+  }
+  .extra-titulo h3 {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  .extra-formacao {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .extra-formacao ul {
+    color: #fff;
+    text-align: justify;
+    font-size: 0.9rem;
+  }
+  .perfil-img {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .foto-perfil {
+    border: solid 1px #fff;
+    height: 94%;
+    width: 98%;
+    border-radius: 50px 20px 50px 20px;
+    background-image: url(/assets/img/sobremimmobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .foto-perfil img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px 20px 50px 20px;
+    box-shadow: rgb(255, 255, 255) 0px 2px 4px,
+      rgb(255, 252, 252) 0px 7px 13px -3px,
+      rgba(255, 255, 255, 0.89) 0px -3px 0px inset;
+  }
+  .foto-perfil img {
+    display: none;
   }
   #mais {
     display: none;
   }
-
-  #leiamais {
-    display: block;
-    border: none;
-    background: none;
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
-      rgba(255, 255, 255, 0.9) 0px 0px 0px 1px;
-    color: #fff;
-    height: 30px;
-    width: 60px;
-    border-radius: 2px;
-    margin-top: 10px;
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .perfil {
+    border: solid 1px #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
   }
-  .perfil-paragrafo {
-    font-size: 1.3rem;
+  .perfil-sobre {
+    border: solid 1px #fff;
     width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
-  .perfil-titulo h3 {
+  .perfil-titulo {
     display: none;
   }
   .titulo-mobile {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .titulo-mobile h3 {
     color: #fff;
-    display: block;
+    font-size: 2.5rem;
+  }
+
+  .perfil-paragrafo {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .perfil-paragrafo p {
     width: 90%;
-    height: 100px;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.5rem;
-  }
-  .contato {
-    width: 80%;
-  }
-}
-
-/*laptops*/
-@media (min-width: 769px) and (max-width: 1024px) {
-  .container-perfil {
-    width: 100%;
-  }
-
-  .perfil-sobre {
-    height: 70%;
-    width: 55%;
-  }
-
-  .perfil-img {
-    height: 70%;
-    width: 40%;
-  }
-
-  .perfil-paragrafo {
-    width: 98%;
-  }
-
-  .perfil-paragrafo p {
-    font-size: 1.1rem;
-  }
-
-  .contato-formacao ul {
-    font-size: 1rem;
-  }
-}
-
-/*telas grandes*/
-@media (min-width: 1025px) and (max-width: 1200px) {
-  .container-perfil {
-    width: 100%;
-  }
-
-  .perfil-sobre {
-    height: 70%;
-    width: 55%;
-  }
-
-  .perfil-img {
-    height: 70%;
-    width: 40%;
-  }
-
-  .perfil-paragrafo {
-    width: 98%;
-  }
-  .perfil-titulo h3 {
-    font-size: 2.8rem;
-  }
-
-  .perfil-paragrafo p {
+    color: #fff;
+    text-align: justify;
     font-size: 1.3rem;
   }
-  .contato-formacao ul {
-    font-size: 1rem;
+  .extra {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .extra-titulo {
+    border: solid 1px #fff;
+    width: 50%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+  }
+  .extra-titulo h3 {
+    color: #fff;
+    font-size: 1.9rem;
+  }
+  .extra-formacao {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .extra-formacao ul {
+    color: #fff;
+    text-align: justify;
+    font-size: 1.1rem;
+  }
+  .perfil-img {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .foto-perfil {
+    border: solid 1px #fff;
+    height: 94%;
+    width: 98%;
+    border-radius: 50px 20px 50px 20px;
+    background-image: url(/assets/img/sobremimmobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .foto-perfil img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px 20px 50px 20px;
+    box-shadow: rgb(255, 255, 255) 0px 2px 4px,
+      rgb(255, 252, 252) 0px 7px 13px -3px,
+      rgba(255, 255, 255, 0.89) 0px -3px 0px inset;
+  }
+  .foto-perfil img {
+    display: none;
+  }
+  #mais {
+    display: none;
   }
 }
-/*extra grandes*/
-@media (min-width: 1221) {
+@media (min-width: 769px) and (max-width: 1024px) {
+  .perfil {
+    border: solid 1px #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .perfil-sobre {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .perfil-titulo {
+    display: none;
+  }
+  .titulo-mobile {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .titulo-mobile h3 {
+    color: #fff;
+    font-size: 2.9rem;
+  }
+
+  .perfil-paragrafo {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .perfil-paragrafo p {
+    width: 90%;
+    color: #fff;
+    text-align: justify;
+    font-size: 1.4rem;
+  }
+  .extra {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .extra-titulo {
+    border: solid 1px #fff;
+    width: 50%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+  }
+  .extra-titulo h3 {
+    color: #fff;
+    font-size: 2rem;
+  }
+  .extra-formacao {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .extra-formacao ul {
+    color: #fff;
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+  .perfil-img {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .foto-perfil {
+    border: solid 1px #fff;
+    height: 94%;
+    width: 98%;
+    border-radius: 50px 20px 50px 20px;
+    background-image: url(/assets/img/sobremimmobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .foto-perfil img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px 20px 50px 20px;
+    box-shadow: rgb(255, 255, 255) 0px 2px 4px,
+      rgb(255, 252, 252) 0px 7px 13px -3px,
+      rgba(255, 255, 255, 0.89) 0px -3px 0px inset;
+  }
+  .foto-perfil img {
+    display: none;
+  }
+  #mais {
+    display: none;
+  }
 }
-/*horizontal*/
-@media (orientation: landscape) {
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .perfil {
+    border: solid 1px #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  .perfil-sobre {
+    border: solid 1px #fff;
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .perfil-titulo {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .perfil-titulo h3 {
+    color: #fff;
+    font-size: 3.3rem;
+  }
+  .perfil-paragrafo {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .perfil-paragrafo p {
+    width: 90%;
+    color: #fff;
+    text-align: justify;
+    font-size: 1.3rem;
+  }
+  .extra {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .extra-titulo {
+    border: solid 1px #fff;
+    width: 50%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+  }
+  .extra-titulo h3 {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .extra-formacao {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .extra-formacao ul {
+    color: #fff;
+    text-align: justify;
+    font-size: 1rem;
+  }
+  .perfil-img {
+    border: solid 1px #fff;
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .foto-perfil {
+    border: solid 1px #fff;
+    height: 80%;
+    width: 90%;
+    border-radius: 50px 20px 50px 20px;
+  }
+  .foto-perfil img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px 20px 50px 20px;
+    box-shadow: rgb(255, 255, 255) 0px 2px 4px,
+      rgb(255, 252, 252) 0px 7px 13px -3px,
+      rgba(255, 255, 255, 0.89) 0px -3px 0px inset;
+  }
+
+  .titulo-mobile {
+    display: none;
+  }
+  #leiamais {
+    display: none;
+  }
+  #pontos {
+    display: none;
+  }
 }
