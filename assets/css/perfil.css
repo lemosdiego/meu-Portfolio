@@ -1,6 +1,5 @@
 @media (min-width: 1201px) and (max-width: 1600px) {
   .perfil {
-    border: solid 1px #fff;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -9,17 +8,16 @@
     gap: 10px;
   }
   .perfil-sobre {
-    border: solid 1px #fff;
     width: 55%;
     height: 90%;
     display: flex;
     flex-direction: column;
     gap: 4px;
+    align-items: center;
   }
   .perfil-titulo {
-    border: solid 1px #fff;
     width: 100%;
-    height: 20%;
+    height: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,54 +25,47 @@
   .perfil-titulo h3 {
     color: #fff;
     font-size: 3.3rem;
+    text-shadow: 2px 2px 4px rgba(226, 218, 218, 0.808);
   }
   .perfil-paragrafo {
-    border: solid 1px #fff;
     width: 100%;
     height: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   .perfil-paragrafo p {
     width: 90%;
     color: #fff;
     text-align: justify;
     font-size: 1.3rem;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.644);
   }
   .extra {
-    border: solid 1px #fff;
-    width: 70%;
-    height: 30%;
+    width: 100%;
+    height: 20%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
   }
-  .extra-titulo {
-    border: solid 1px #fff;
-    width: 50%;
-    height: 30%;
-    display: flex;
-    align-items: center;
-  }
-  .extra-titulo h3 {
+  .extra a button {
+    width: 150px;
+    height: 50px;
+    border-radius: 4px;
+    background: none;
     color: #fff;
     font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: rgb(255, 255, 255) 0px 2px 4px 0px,
+      rgba(254, 255, 255, 0.815) 0px 2px 16px 0px;
   }
-  .extra-formacao {
-    border: solid 1px #fff;
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .extra-formacao ul {
-    color: #fff;
-    text-align: justify;
-    font-size: 1rem;
+  .extra a button:hover {
+    transform: scale(1.1);
+    background-color: #333;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
   }
   .perfil-img {
-    border: solid 1px #fff;
     width: 45%;
     height: 90%;
     display: flex;
@@ -82,7 +73,6 @@
     justify-content: center;
   }
   .foto-perfil {
-    border: solid 1px #fff;
     height: 94%;
     width: 70%;
     border-radius: 50px 20px 50px 20px;
@@ -108,7 +98,6 @@
 }
 @media (min-width: 1601px) {
   .perfil {
-    border: solid 1px #fff;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -117,15 +106,15 @@
     gap: 10px;
   }
   .perfil-sobre {
-    border: solid 1px #fff;
     width: 55%;
     height: 88%;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    align-items: center;
+    justify-content: center;
   }
   .perfil-titulo {
-    border: solid 1px #fff;
     width: 100%;
     height: 20%;
     display: flex;
@@ -137,52 +126,44 @@
     font-size: 5rem;
   }
   .perfil-paragrafo {
-    border: solid 1px #fff;
     width: 100%;
     height: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   .perfil-paragrafo p {
     width: 90%;
     color: #fff;
     text-align: justify;
     font-size: 1.8rem;
+    margin-left: 50px;
   }
   .extra {
-    border: solid 1px #fff;
-    width: 70%;
-    height: 30%;
+    width: 100%;
+    height: 20%;
     display: flex;
     align-items: center;
     flex-direction: column;
-  }
-  .extra-titulo {
-    border: solid 1px #fff;
-    width: 50%;
-    height: 30%;
-    display: flex;
-    align-items: center;
-  }
-  .extra-titulo h3 {
-    color: #fff;
-    font-size: 3rem;
-  }
-  .extra-formacao {
-    border: solid 1px #fff;
-    width: 100%;
-    height: 70%;
-    display: flex;
     justify-content: center;
-    align-items: center;
   }
-  .extra-formacao ul {
+  .extra a button {
+    width: 200px;
+    height: 70px;
+    border-radius: 4px;
+    background: none;
     color: #fff;
-    text-align: justify;
     font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: rgb(255, 255, 255) 0px 2px 4px 0px,
+      rgba(254, 255, 255, 0.815) 0px 2px 16px 0px;
+  }
+  .extra a button:hover {
+    transform: scale(1.1);
+    background-color: #333;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
   }
   .perfil-img {
-    border: solid 1px #fff;
     width: 45%;
     height: 88%;
     display: flex;
@@ -190,7 +171,6 @@
     justify-content: center;
   }
   .foto-perfil {
-    border: solid 1px #fff;
     height: 94%;
     width: 70%;
     border-radius: 50px 20px 50px 20px;
@@ -216,7 +196,6 @@
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .perfil {
-    border: solid 1px #fff;
     height: 100vh;
     display: flex;
     flex-direction: column-reverse;
@@ -225,7 +204,6 @@
     gap: 4px;
   }
   .perfil-sobre {
-    border: solid 1px #fff;
     width: 100%;
     height: 65%;
     display: flex;
@@ -236,7 +214,6 @@
     display: none;
   }
   .titulo-mobile {
-    border: solid 1px #fff;
     width: 100%;
     height: 8%;
     display: flex;
@@ -249,9 +226,8 @@
   }
 
   .perfil-paragrafo {
-    border: solid 1px #fff;
     width: 100%;
-    height: 65%;
+    height: 85%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -264,41 +240,30 @@
     font-size: 1.1rem;
   }
   .extra {
-    border: solid 1px #fff;
     width: 100%;
-    height: 35%;
+    height: 15%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin-top: 10px;
   }
-  .extra-titulo {
-    border: solid 1px #fff;
-    width: 50%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-  }
-  .extra-titulo h3 {
+  .extra a button {
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    background: none;
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: rgb(255, 255, 255) 0px 2px 4px 0px,
+      rgba(254, 255, 255, 0.815) 0px 2px 16px 0px;
   }
-  .extra-formacao {
-    border: solid 1px #fff;
-    width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .extra-formacao ul {
-    color: #fff;
-    text-align: justify;
-    font-size: 0.9rem;
+  .extra a button:hover {
+    transform: scale(1.1);
+    background-color: #333;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
   }
   .perfil-img {
-    border: solid 1px #fff;
     width: 100%;
     height: 25%;
     display: flex;
@@ -306,7 +271,6 @@
     justify-content: center;
   }
   .foto-perfil {
-    border: solid 1px #fff;
     height: 94%;
     width: 98%;
     border-radius: 50px 20px 50px 20px;
@@ -326,13 +290,12 @@
   .foto-perfil img {
     display: none;
   }
-  #mais {
+  #leiamais {
     display: none;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .perfil {
-    border: solid 1px #fff;
     height: 100vh;
     display: flex;
     flex-direction: column-reverse;
@@ -341,7 +304,6 @@
     gap: 4px;
   }
   .perfil-sobre {
-    border: solid 1px #fff;
     width: 100%;
     height: 70%;
     display: flex;
@@ -352,7 +314,6 @@
     display: none;
   }
   .titulo-mobile {
-    border: solid 1px #fff;
     width: 100%;
     height: 8%;
     display: flex;
@@ -365,125 +326,8 @@
   }
 
   .perfil-paragrafo {
-    border: solid 1px #fff;
     width: 100%;
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  .perfil-paragrafo p {
-    width: 90%;
-    color: #fff;
-    text-align: justify;
-    font-size: 1.3rem;
-  }
-  .extra {
-    border: solid 1px #fff;
-    width: 100%;
-    height: 35%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  .extra-titulo {
-    border: solid 1px #fff;
-    width: 50%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-  }
-  .extra-titulo h3 {
-    color: #fff;
-    font-size: 1.9rem;
-  }
-  .extra-formacao {
-    border: solid 1px #fff;
-    width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .extra-formacao ul {
-    color: #fff;
-    text-align: justify;
-    font-size: 1.1rem;
-  }
-  .perfil-img {
-    border: solid 1px #fff;
-    width: 100%;
-    height: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .foto-perfil {
-    border: solid 1px #fff;
-    height: 94%;
-    width: 98%;
-    border-radius: 50px 20px 50px 20px;
-    background-image: url(/assets/img/sobremimmobile.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .foto-perfil img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50px 20px 50px 20px;
-    box-shadow: rgb(255, 255, 255) 0px 2px 4px,
-      rgb(255, 252, 252) 0px 7px 13px -3px,
-      rgba(255, 255, 255, 0.89) 0px -3px 0px inset;
-  }
-  .foto-perfil img {
-    display: none;
-  }
-  #mais {
-    display: none;
-  }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-  .perfil {
-    border: solid 1px #fff;
-    height: 100vh;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-  }
-  .perfil-sobre {
-    border: solid 1px #fff;
-    width: 100%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-  .perfil-titulo {
-    display: none;
-  }
-  .titulo-mobile {
-    border: solid 1px #fff;
-    width: 100%;
-    height: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .titulo-mobile h3 {
-    color: #fff;
-    font-size: 2.9rem;
-  }
-
-  .perfil-paragrafo {
-    border: solid 1px #fff;
-    width: 100%;
-    height: 50%;
+    height: 90%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -496,41 +340,30 @@
     font-size: 1.4rem;
   }
   .extra {
-    border: solid 1px #fff;
     width: 100%;
-    height: 35%;
+    height: 15%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin-top: 10px;
   }
-  .extra-titulo {
-    border: solid 1px #fff;
-    width: 50%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-  }
-  .extra-titulo h3 {
+  .extra a button {
+    width: 110px;
+    height: 40px;
+    border-radius: 4px;
+    background: none;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: rgb(255, 255, 255) 0px 2px 4px 0px,
+      rgba(254, 255, 255, 0.815) 0px 2px 16px 0px;
   }
-  .extra-formacao {
-    border: solid 1px #fff;
-    width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .extra-formacao ul {
-    color: #fff;
-    text-align: justify;
-    font-size: 1.2rem;
+  .extra a button:hover {
+    transform: scale(1.1);
+    background-color: #333;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
   }
   .perfil-img {
-    border: solid 1px #fff;
     width: 100%;
     height: 40%;
     display: flex;
@@ -538,7 +371,6 @@
     justify-content: center;
   }
   .foto-perfil {
-    border: solid 1px #fff;
     height: 94%;
     width: 98%;
     border-radius: 50px 20px 50px 20px;
@@ -558,13 +390,112 @@
   .foto-perfil img {
     display: none;
   }
-  #mais {
+  #leiamais {
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .perfil {
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .perfil-sobre {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .perfil-titulo {
+    display: none;
+  }
+  .titulo-mobile {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .titulo-mobile h3 {
+    color: #fff;
+    font-size: 2.9rem;
+  }
+
+  .perfil-paragrafo {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .perfil-paragrafo p {
+    width: 90%;
+    color: #fff;
+    text-align: justify;
+    font-size: 1.5rem;
+  }
+  .extra {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .extra a button {
+    width: 150px;
+    height: 50px;
+    border-radius: 4px;
+    background: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: rgb(255, 255, 255) 0px 2px 4px 0px,
+      rgba(254, 255, 255, 0.815) 0px 2px 16px 0px;
+  }
+  .extra a button:hover {
+    transform: scale(1.1);
+    background-color: #333;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  }
+  .perfil-img {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .foto-perfil {
+    height: 94%;
+    width: 90%;
+    border-radius: 50px 20px 50px 20px;
+    background-image: url(/assets/img/sobremimmobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .foto-perfil img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px 20px 50px 20px;
+    box-shadow: rgb(255, 255, 255) 0px 2px 4px,
+      rgb(255, 252, 252) 0px 7px 13px -3px,
+      rgba(255, 255, 255, 0.89) 0px -3px 0px inset;
+  }
+  .foto-perfil img {
+    display: none;
+  }
+  #leiamais {
     display: none;
   }
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
   .perfil {
-    border: solid 1px #fff;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -573,7 +504,6 @@
     gap: 10px;
   }
   .perfil-sobre {
-    border: solid 1px #fff;
     width: 50%;
     height: 90%;
     display: flex;
@@ -581,7 +511,6 @@
     gap: 4px;
   }
   .perfil-titulo {
-    border: solid 1px #fff;
     width: 100%;
     height: 15%;
     display: flex;
@@ -593,52 +522,43 @@
     font-size: 3.3rem;
   }
   .perfil-paragrafo {
-    border: solid 1px #fff;
     width: 100%;
-    height: 50%;
+    height: 80%;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   .perfil-paragrafo p {
     width: 90%;
     color: #fff;
     text-align: justify;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .extra {
-    border: solid 1px #fff;
     width: 100%;
-    height: 30%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .extra-titulo {
-    border: solid 1px #fff;
-    width: 50%;
     height: 20%;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
-  .extra-titulo h3 {
+  .extra a button {
+    width: 170px;
+    height: 70px;
+    border-radius: 4px;
+    background: none;
     color: #fff;
     font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: rgb(255, 255, 255) 0px 2px 4px 0px,
+      rgba(254, 255, 255, 0.815) 0px 2px 16px 0px;
   }
-  .extra-formacao {
-    border: solid 1px #fff;
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .extra-formacao ul {
-    color: #fff;
-    text-align: justify;
-    font-size: 1rem;
+  .extra a button:hover {
+    transform: scale(1.1);
+    background-color: #333;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
   }
   .perfil-img {
-    border: solid 1px #fff;
     width: 50%;
     height: 90%;
     display: flex;
@@ -646,8 +566,7 @@
     justify-content: center;
   }
   .foto-perfil {
-    border: solid 1px #fff;
-    height: 80%;
+    height: 90%;
     width: 90%;
     border-radius: 50px 20px 50px 20px;
   }
