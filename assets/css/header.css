@@ -1,147 +1,258 @@
-.header {
-  height: 100vh;
-  background: url(../img/background.png);
-  background-position: center;
-  background-size: cover;
-  opacity: 2;
-  box-shadow: rgba(255, 255, 255, 0.411) 0px 30px 60px -12px inset,
-    rgba(202, 195, 195, 0.3) 0px 18px 36px -18px;
-}
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .header {
+    height: 100vh;
+    background: url(../img/background.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 2;
+    box-shadow: rgba(255, 255, 255, 0.411) 0px 30px 60px -12px inset,
+      rgba(202, 195, 195, 0.3) 0px 18px 36px -18px;
+  }
+  .header-menu {
+    width: 100%;
+    height: 60px;
+    background: #010127;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: rgb(254, 255, 255) 0px 2px 4px 0px,
+      rgba(249, 252, 253, 0.32) 0px 2px 16px 0px;
+  }
+  .header-menu ul a:hover {
+    transform: scale(2);
+  }
+  .header-menu h1 {
+    width: 30%;
+    height: 40px;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
 
-.header-menu {
-  width: 100%;
-  height: 60px;
-  background: #010127;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  box-shadow: rgb(254, 255, 255) 0px 2px 4px 0px,
-    rgba(249, 252, 253, 0.32) 0px 2px 16px 0px;
-}
-
-.header-menu ul a:hover {
-  transform: scale(2);
-}
-
-.header-menu h1 {
-  width: 30%;
-  height: 40px;
-  font-size: 1.5rem;
-  color: white;
-  display: flex;
-  align-items: center;
-}
-
-.header-logo {
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-}
-
-.header-logo img {
-  width: 100%;
-  border-radius: 50%;
-}
-
-.animacao {
-  opacity: 0;
-  animation: surgirlogo 20s ease forwards;
-}
-@keyframes surgirlogo {
-  from {
+  .header-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+  .header-logo img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  .animacao {
     opacity: 0;
+    animation: surgirlogo 20s ease forwards;
   }
-  to {
-    opacity: 1;
+  @keyframes surgirlogo {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .header-menu ul {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  .links-menu {
+    text-decoration: none;
+    color: #fff;
+  }
+  .header-apresentacao {
+    width: 40%;
+    margin-top: 60px;
+    margin-left: 50px;
+    color: #fff;
+    padding-top: 40px;
+  }
+  .header-titulo {
+    font-size: 1.5rem;
+    padding-top: 40px;
+  }
+  #titulo {
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
+  }
+  #subtitulo {
+    font-style: italic;
+    line-height: 30px;
+    text-align: justify;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
+  }
+  .header-subtitulo {
+    font-size: 1.4rem;
+    padding: 4px;
+  }
+  .header-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .header-icons {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+  .icon {
+    width: 100%;
+  }
+  .menu-mobile {
+    display: none;
+  }
+  .topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .topo:hover a img {
+    transform: scale(1.2);
+  }
+  .esquerda {
+    display: none;
   }
 }
+@media (min-width: 1601px) {
+  .header {
+    height: 100vh;
+    background: url(../img/background.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 2;
+    box-shadow: rgba(255, 255, 255, 0.411) 0px 30px 60px -12px inset,
+      rgba(202, 195, 195, 0.3) 0px 18px 36px -18px;
+  }
+  .header-menu {
+    width: 100%;
+    height: 80px;
+    background: #010127;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: rgb(254, 255, 255) 0px 2px 4px 0px,
+      rgba(249, 252, 253, 0.32) 0px 2px 16px 0px;
+  }
+  .header-menu ul a:hover {
+    transform: scale(2);
+  }
+  .header-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+  }
 
-.header-menu ul {
-  width: 60%;
-  display: flex;
-  flex-direction: row;
-  color: white;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 40px;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  font-weight: 100;
-}
-
-.links-menu {
-  text-decoration: none;
-  color: #fff;
-}
-
-.header-apresentacao {
-  width: 40%;
-  margin-top: 60px;
-  margin-left: 50px;
-  color: #fff;
-  padding-top: 40px;
-}
-
-.header-titulo {
-  font-size: 1.5rem;
-  padding-top: 40px;
-}
-
-#titulo {
-  font-style: italic;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
-}
-
-#subtitulo {
-  font-style: italic;
-  line-height: 30px;
-  text-align: justify;
-  font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
-}
-
-.header-subtitulo {
-  font-size: 1.4rem;
-  padding: 4px;
-}
-
-.header-links {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.header-icons {
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-}
-
-.icon {
-  width: 100%;
-}
-.menu-mobile {
-  display: none;
-}
-.topo {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 70px;
-  height: 70px;
-  border-radius: 50px;
-  cursor: pointer;
-  z-index: 1000;
-}
-.topo:hover a img {
-  transform: scale(1.2);
-}
-.esquerda {
-  display: none;
+  .header-logo img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  .animacao {
+    opacity: 0;
+    animation: surgirlogo 20s ease forwards;
+  }
+  @keyframes surgirlogo {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .header-menu ul {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  .links-menu {
+    text-decoration: none;
+    color: #fff;
+  }
+  .header-apresentacao {
+    width: 50%;
+    margin-top: 70px;
+    margin-left: 60px;
+    color: #fff;
+    padding-top: 40px;
+  }
+  .header-titulo {
+    font-size: 3rem;
+    padding-top: 60px;
+  }
+  #titulo {
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
+  }
+  #subtitulo {
+    font-style: italic;
+    line-height: 50px;
+    text-align: justify;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
+  }
+  .header-subtitulo {
+    font-size: 2rem;
+    padding: 4px;
+  }
+  .header-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .header-icons {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+  .icon {
+    width: 100%;
+  }
+  .menu-mobile {
+    display: none;
+  }
+  .topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .topo:hover a img {
+    transform: scale(1.2);
+  }
+  .esquerda {
+    display: none;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -164,10 +275,10 @@
     height: 90vh;
   }
   .header-apresentacao {
-    width: 90%;
+    width: 94%;
     text-align: left;
     position: absolute;
-    top: 27%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -182,18 +293,148 @@
     position: static;
     display: flex;
     justify-content: left;
+    background: #010127;
+    height: 50px;
+    display: flex;
+    align-items: center;
   }
   .header-logo {
     margin-left: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  .header-logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
   }
   .header-titulo {
     text-align: center;
   }
   .header-titulo h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
-  .header-titulo p {
-    font-size: 1.1rem;
+  .header-subtitulo p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  #titulo {
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
+  }
+  #subtitulo {
+    font-style: italic;
+    line-height: 30px;
+    text-align: justify;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
+  }
+
+  .topo {
+    display: none;
+  }
+
+  /*Menu Mobile*/
+
+  .menu-mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #010127;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: rgb(255, 254, 254) 0px 1px 3px, rgb(245, 243, 243) 0px 1px 2px;
+    overflow-x: hidden;
+  }
+
+  .menu-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+  }
+
+  .menu-icon img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  border {
+    overflow-x: hidden;
+  }
+  .header {
+    position: relative;
+    height: 100vh;
+    background: url(/assets/img/background-mobile.png);
+    background-position: center;
+    background-size: cover;
+  }
+  .header-menu ul {
+    display: none;
+  }
+  .header-apresentacao-mobile {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+  }
+  .header-apresentacao {
+    width: 94%;
+    text-align: left;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    margin-left: 0;
+  }
+  .header-menu h1 {
+    font-size: 1rem;
+    width: 100%;
+    margin-left: 10px;
+  }
+  .header-menu {
+    position: static;
+    display: flex;
+    justify-content: left;
+    background: #010127;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .header-logo {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  .header-logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .header-titulo {
+    text-align: center;
+  }
+  .header-titulo h2 {
+    font-size: 2.5rem;
+  }
+  .header-subtitulo p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  #titulo {
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
+  }
+  #subtitulo {
+    font-style: italic;
+    line-height: 30px;
+    text-align: justify;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
   }
 
   .topo {
@@ -229,33 +470,8 @@
   }
 }
 
-/*tablets*/
-@media (min-width: 481px) and (max-width: 768px) {
-  .header-menu ul {
-    display: none;
-  }
-  .header-menu {
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .header-logo {
-    margin-left: 20px;
-  }
-
-  .header-apresentacao-mobile {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .header-apresentacao {
-    width: 94%;
-    margin: 0;
-  }
-
+/*laptops*/
+@media (min-width: 769px) and (max-width: 1024px) {
   .header {
     position: relative;
     height: 100vh;
@@ -263,52 +479,126 @@
     background-position: center;
     background-size: cover;
   }
-
-  .menu-mobile {
-    display: block;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+  .header-menu {
     width: 100%;
     height: 70px;
-    background-color: #010127;
+    background: #010127;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: rgb(255, 254, 254) 0px 1px 3px, rgb(245, 243, 243) 0px 1px 2px;
-    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: rgb(254, 255, 255) 0px 2px 4px 0px,
+      rgba(249, 252, 253, 0.32) 0px 2px 16px 0px;
+  }
+  .header-menu ul a:hover {
+    transform: scale(1.2);
+  }
+  .header-menu h1 {
+    width: 30%;
+    height: 40px;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
   }
 
-  .menu-icon {
-    width: 40px;
-    height: 40px;
+  .header-logo {
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
   }
-
-  .menu-icon img {
+  .header-logo img {
     width: 100%;
-    height: 100%;
+    border-radius: 50%;
   }
-}
-
-/*laptops*/
-@media (min-width: 769px) and (max-width: 1024px) {
-  body {
+  .animacao {
+    opacity: 0;
+    animation: surgirlogo 20s ease forwards;
   }
-
-  .header {
-    position: relative;
-    height: 100vh;
-    background: url(/assets/img/background-mobile.png);
-    background-position: center;
-    background-size: cover;
+  @keyframes surgirlogo {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
-
-  .header-apresentacao {
+  .header-menu ul {
     width: 60%;
-    height: 20%;
-    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  .links-menu {
+    text-decoration: none;
+    color: #fff;
+  }
+  .header-apresentacao {
+    width: 90%;
+    margin-top: 60px;
+    margin-left: 50px;
+    color: #fff;
+    padding-top: 40px;
+  }
+  .header-titulo {
+    font-size: 2rem;
+    padding-top: 40px;
+  }
+  #titulo {
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
+  }
+  #subtitulo {
+    font-style: italic;
+    line-height: 40px;
+    text-align: justify;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
+  }
+  .header-subtitulo {
+    font-size: 1.9rem;
+    padding: 4px;
+  }
+  .header-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .header-icons {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+  .icon {
+    width: 100%;
+  }
+  .menu-mobile {
+    display: none;
+  }
+  .topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .topo:hover a img {
+    transform: scale(1.2);
+  }
+  .esquerda {
+    display: none;
   }
 }
 
@@ -321,9 +611,125 @@
     background-position: center;
     background-size: cover;
   }
+  .header-menu {
+    width: 100%;
+    height: 60px;
+    background: #010127;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: rgb(254, 255, 255) 0px 2px 4px 0px,
+      rgba(249, 252, 253, 0.32) 0px 2px 16px 0px;
+  }
+  .header-menu ul a:hover {
+    transform: scale(1.4);
+  }
+  .header-menu h1 {
+    width: 30%;
+    height: 40px;
+    font-size: 1.2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+  .header-logo img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  .animacao {
+    opacity: 0;
+    animation: surgirlogo 20s ease forwards;
+  }
+  @keyframes surgirlogo {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .header-menu ul {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  .links-menu {
+    text-decoration: none;
+    color: #fff;
+  }
   .header-apresentacao {
     width: 60%;
-    height: 20%;
-    padding-top: 10px;
+    margin-top: 60px;
+    margin-left: 50px;
+    color: #fff;
+    padding-top: 40px;
+  }
+  .header-titulo {
+    font-size: 2.1rem;
+    padding-top: 40px;
+  }
+  #titulo {
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
+  }
+  #subtitulo {
+    font-style: italic;
+    line-height: 40px;
+    text-align: justify;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
+  }
+  .header-subtitulo {
+    font-size: 1.7rem;
+    padding: 4px;
+  }
+  .header-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .header-icons {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+  .icon {
+    width: 100%;
+  }
+  .menu-mobile {
+    display: none;
+  }
+  .topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .topo:hover a img {
+    transform: scale(1.2);
+  }
+  .esquerda {
+    display: none;
   }
 }

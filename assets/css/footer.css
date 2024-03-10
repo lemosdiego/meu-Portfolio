@@ -5,83 +5,78 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: rgba(249, 249, 252, 0.904) 0px 30px 60px -12px inset,
-      rgb(252, 249, 249) 0px 18px 36px -18px inset;
-  }
-  .container-contatos {
-    width: 90%;
-    height: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .formulario-contato {
-    width: 70%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 4px;
   }
-  .form-titulo {
-    width: 70%;
-    height: 20%;
-    display: flex;
-    align-items: center;
+  .titulo {
+    width: 100%;
+    height: 25%;
   }
-  .form-titulo h3 {
+  .titulo h3 {
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-top: 30px;
   }
   .formulario {
-    width: 70%;
-    height: 80%;
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 2px,
+      rgba(255, 255, 255, 0.65) 0px 4px 6px -1px,
+      rgba(255, 254, 254, 0.08) 0px 1px 0px inset;
+    height: 60%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
   }
   .formulario form {
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
     color: #fff;
-    gap: 4px;
     justify-content: center;
   }
-  .formulario form input {
-    background: none;
-    width: 90%;
-    height: 20px;
-    color: #fff;
-    outline: none;
-    border: none;
-    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  form label {
+    font-size: 1.2rem;
   }
-  .text-area {
-    width: 90%;
-  }
-  .text-area textarea {
-    background: none;
-    outline: 0;
-    resize: none;
-    border: none;
-    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
-    width: 300px;
-    color: #fff;
-  }
-  .formulario button {
-    width: 100px;
+  form input {
     height: 40px;
-    border-radius: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    width: 90%;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    color: #fff;
   }
-  .formulario button:hover {
+  textarea {
+    width: 90%;
+    resize: none;
+    background: none;
+    color: #fff;
+    border: none;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  }
+  .button-form {
+    box-shadow: rgba(230, 227, 227, 0.05) 0px 6px 24px 0px,
+      rgba(255, 255, 255, 0.705) 0px 0px 0px 1px;
+    width: 30%;
+    height: 40px;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: none;
+  }
+  .button-form:hover {
     transform: scale(1.1);
+    background: #333;
   }
   .rodape {
+    height: 15%;
     width: 100%;
-    height: 20%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-direction: row;
+    align-items: center;
     gap: 20px;
   }
   .rodape-icones {
@@ -95,9 +90,10 @@
     height: 100%;
   }
   .rodape-icones:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
   }
 }
+
 @media (min-width: 1601px) {
   .footer {
     height: 100vh;
@@ -105,87 +101,83 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: rgba(249, 249, 252, 0.904) 0px 30px 60px -12px inset,
-      rgb(252, 249, 249) 0px 18px 36px -18px inset;
-  }
-  .container-contatos {
-    width: 90%;
-    height: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .formulario-contato {
-    width: 70%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 4px;
   }
-  .form-titulo {
-    width: 80%;
-    height: 20%;
-    display: flex;
-    align-items: center;
+  .titulo {
+    width: 100%;
+    height: 25%;
   }
-  .form-titulo h3 {
+  .titulo h3 {
     color: #fff;
-    font-size: 3.2rem;
+    font-size: 3.5rem;
+    margin-top: 30px;
   }
   .formulario {
-    width: 80%;
-    height: 80%;
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 2px,
+      rgba(255, 255, 255, 0.65) 0px 4px 6px -1px,
+      rgba(255, 254, 254, 0.08) 0px 1px 0px inset;
+    height: 60%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
   }
   .formulario form {
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
     color: #fff;
-    gap: 4px;
     justify-content: center;
-    font-size: 1.4rem;
   }
-  .formulario form input {
+  form label {
+    font-size: 1.2rem;
+  }
+  form input {
+    height: 50px;
+    border: none;
     background: none;
+    outline: none;
     width: 90%;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    color: #fff;
+  }
+  textarea {
+    width: 90%;
+    resize: none;
+    background: none;
+    color: #fff;
+    border: none;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  }
+  .button-form {
+    box-shadow: rgba(230, 227, 227, 0.05) 0px 6px 24px 0px,
+      rgba(255, 255, 255, 0.705) 0px 0px 0px 1px;
+    width: 30%;
     height: 40px;
     color: #fff;
-    outline: none;
     border: none;
-    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
-  }
-  .text-area textarea {
+    font-size: 1.2rem;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 10px;
     background: none;
-    outline: 1;
-    resize: none;
-    width: 90%;
-    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
-    width: 300px;
-    color: #fff;
-    border: none;
   }
-  .formulario button {
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-  }
-  .formulario button:hover {
+  .button-form:hover {
     transform: scale(1.1);
+    background: #333;
   }
   .rodape {
+    height: 15%;
     width: 100%;
-    height: 20%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-direction: row;
+    align-items: center;
     gap: 20px;
   }
   .rodape-icones {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     cursor: pointer;
   }
@@ -194,7 +186,7 @@
     height: 100%;
   }
   .rodape-icones:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -204,97 +196,90 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: rgba(249, 249, 252, 0.904) 0px 30px 60px -12px inset,
-      rgb(252, 249, 249) 0px 18px 36px -18px inset;
   }
-  .container-contatos {
+  .titulo {
     width: 100%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 25%;
   }
-  .formulario-contato {
-    width: 99%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-  }
-  .form-titulo {
-    width: 94%;
-    height: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .form-titulo h3 {
+  .titulo h3 {
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
   .formulario {
-    width: 94%;
-    height: 80%;
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 2px,
+      rgba(255, 255, 255, 0.65) 0px 4px 6px -1px,
+      rgba(255, 254, 254, 0.08) 0px 1px 0px inset;
+    height: 50%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
   }
   .formulario form {
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
     color: #fff;
-    gap: 4px;
     justify-content: center;
+  }
+  form label {
     font-size: 1.2rem;
   }
-  .formulario form input {
-    background: none;
-    width: 90%;
-    height: 30px;
-    color: #fff;
-    outline: none;
-    border: none;
-    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
-  }
-  .text-area textarea {
-    background: none;
-    outline: 0;
-    border: none;
-    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
-    width: 300px;
-    color: #fff;
-  }
-  .formulario button {
-    width: 100px;
+  form input {
     height: 40px;
-    border-radius: 10px;
-    margin-top: 20px;
+    border: none;
+    background: none;
+    outline: none;
+    width: 90%;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    color: #fff;
   }
-  .formulario button:hover {
+  textarea {
+    width: 90%;
+    resize: none;
+    background: none;
+    color: #fff;
+    border: none;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  }
+  .button-form {
+    box-shadow: rgba(230, 227, 227, 0.05) 0px 6px 24px 0px,
+      rgba(255, 255, 255, 0.705) 0px 0px 0px 1px;
+    width: 30%;
+    height: 40px;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: none;
+  }
+  .button-form:hover {
     transform: scale(1.1);
+    background: #333;
   }
   .rodape {
+    height: 15%;
     width: 100%;
-    height: 20%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
   }
   .rodape-icones {
     width: 50px;
-    height: 50px;
+    height: 40px;
     border-radius: 50%;
     cursor: pointer;
-    margin-bottom: 30px;
   }
   .rodape-icones img {
     width: 100%;
     height: 100%;
   }
   .rodape-icones:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
   }
 }
 
@@ -305,97 +290,90 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: rgba(249, 249, 252, 0.904) 0px 30px 60px -12px inset,
-      rgb(252, 249, 249) 0px 18px 36px -18px inset;
   }
-  .container-contatos {
+  .titulo {
     width: 100%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 25%;
   }
-  .formulario-contato {
-    width: 99%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-  }
-  .form-titulo {
-    width: 94%;
-    height: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .form-titulo h3 {
+  .titulo h3 {
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
   .formulario {
-    width: 94%;
-    height: 80%;
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 2px,
+      rgba(255, 255, 255, 0.65) 0px 4px 6px -1px,
+      rgba(255, 254, 254, 0.08) 0px 1px 0px inset;
+    height: 50%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
   }
   .formulario form {
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
     color: #fff;
-    gap: 4px;
     justify-content: center;
+  }
+  form label {
     font-size: 1.2rem;
   }
-  .formulario form input {
-    background: none;
-    width: 90%;
-    height: 30px;
-    color: #fff;
-    outline: none;
-    border: none;
-    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
-  }
-  .text-area textarea {
-    background: none;
-    outline: 0;
-    border: none;
-    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
-    width: 300px;
-    color: #fff;
-  }
-  .formulario button {
-    width: 100px;
+  form input {
     height: 40px;
-    border-radius: 10px;
-    margin-top: 20px;
+    border: none;
+    background: none;
+    outline: none;
+    width: 90%;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    color: #fff;
   }
-  .formulario button:hover {
+  textarea {
+    width: 90%;
+    resize: none;
+    background: none;
+    color: #fff;
+    border: none;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  }
+  .button-form {
+    box-shadow: rgba(230, 227, 227, 0.05) 0px 6px 24px 0px,
+      rgba(255, 255, 255, 0.705) 0px 0px 0px 1px;
+    width: 30%;
+    height: 40px;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: none;
+  }
+  .button-form:hover {
     transform: scale(1.1);
+    background: #333;
   }
   .rodape {
+    height: 15%;
     width: 100%;
-    height: 20%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
   }
   .rodape-icones {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
-    margin-bottom: 40px;
   }
   .rodape-icones img {
     width: 100%;
     height: 100%;
   }
   .rodape-icones:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -405,82 +383,78 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: rgba(249, 249, 252, 0.904) 0px 30px 60px -12px inset,
-      rgb(252, 249, 249) 0px 18px 36px -18px inset;
-  }
-  .container-contatos {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .formulario-contato {
-    width: 99%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 4px;
   }
-  .form-titulo {
-    width: 94%;
-    height: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .titulo {
+    width: 100%;
+    height: 25%;
   }
-  .form-titulo h3 {
+  .titulo h3 {
     color: #fff;
     font-size: 3rem;
+    margin-top: 30px;
   }
   .formulario {
-    width: 94%;
-    height: 80%;
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 2px,
+      rgba(255, 255, 255, 0.65) 0px 4px 6px -1px,
+      rgba(255, 254, 254, 0.08) 0px 1px 0px inset;
+    height: 60%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
   }
   .formulario form {
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
     color: #fff;
-    gap: 4px;
     justify-content: center;
-    font-size: 1.5rem;
   }
-  .formulario form input {
-    background: none;
-    width: 90%;
-    height: 30px;
-    color: #fff;
-    outline: none;
-    border: none;
-    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  form label {
+    font-size: 1.2rem;
   }
-  .text-area textarea {
-    background: none;
-    outline: 0;
-    border: none;
-    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
-    width: 300px;
-    color: #fff;
-  }
-  .formulario button {
-    width: 100px;
+  form input {
     height: 40px;
-    border-radius: 10px;
-    margin-top: 20px;
+    border: none;
+    background: none;
+    outline: none;
+    width: 90%;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    color: #fff;
   }
-  .formulario button:hover {
+  textarea {
+    width: 90%;
+    resize: none;
+    background: none;
+    color: #fff;
+    border: none;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  }
+  .button-form {
+    box-shadow: rgba(230, 227, 227, 0.05) 0px 6px 24px 0px,
+      rgba(255, 255, 255, 0.705) 0px 0px 0px 1px;
+    width: 30%;
+    height: 40px;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: none;
+  }
+  .button-form:hover {
     transform: scale(1.1);
+    background: #333;
   }
   .rodape {
+    height: 15%;
     width: 100%;
-    height: 20%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-direction: row;
+    align-items: center;
     gap: 20px;
   }
   .rodape-icones {
@@ -488,14 +462,13 @@
     height: 70px;
     border-radius: 50%;
     cursor: pointer;
-    margin-bottom: 40px;
   }
   .rodape-icones img {
     width: 100%;
     height: 100%;
   }
   .rodape-icones:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
@@ -505,81 +478,78 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: rgba(249, 249, 252, 0.904) 0px 30px 60px -12px inset,
-      rgb(252, 249, 249) 0px 18px 36px -18px inset;
-  }
-  .container-contatos {
-    width: 80%;
-    height: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .formulario-contato {
-    width: 99%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 4px;
   }
-  .form-titulo {
-    width: 94%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .titulo {
+    width: 100%;
+    height: 25%;
   }
-  .form-titulo h3 {
+  .titulo h3 {
     color: #fff;
-    font-size: 3.5rem;
+    font-size: 3rem;
+    margin-top: 30px;
   }
   .formulario {
-    width: 94%;
-    height: 70%;
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 2px,
+      rgba(255, 255, 255, 0.65) 0px 4px 6px -1px,
+      rgba(255, 254, 254, 0.08) 0px 1px 0px inset;
+    height: 60%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
   }
   .formulario form {
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
     color: #fff;
-    gap: 4px;
     justify-content: center;
-    font-size: 1.5rem;
   }
-  .formulario form input {
+  form label {
+    font-size: 1.2rem;
+  }
+  form input {
+    height: 40px;
+    border: none;
     background: none;
+    outline: none;
     width: 90%;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    color: #fff;
+  }
+  textarea {
+    width: 90%;
+    resize: none;
+    background: none;
+    color: #fff;
+    border: none;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  }
+  .button-form {
+    box-shadow: rgba(230, 227, 227, 0.05) 0px 6px 24px 0px,
+      rgba(255, 255, 255, 0.705) 0px 0px 0px 1px;
+    width: 30%;
     height: 40px;
     color: #fff;
-    outline: none;
     border: none;
-    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
-  }
-  .text-area textarea {
+    font-size: 1.2rem;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 10px;
     background: none;
-    outline: 0;
-    border: none;
-    box-shadow: rgb(255, 255, 255) 0px 1px 0px;
-    width: 300px;
-    color: #fff;
   }
-  .formulario button {
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-  }
-  .formulario button:hover {
+  .button-form:hover {
     transform: scale(1.1);
+    background: #333;
   }
   .rodape {
+    height: 15%;
     width: 100%;
-    height: 20%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-direction: row;
+    align-items: center;
     gap: 20px;
   }
   .rodape-icones {
@@ -587,13 +557,12 @@
     height: 70px;
     border-radius: 50%;
     cursor: pointer;
-    margin-bottom: 20px;
   }
   .rodape-icones img {
     width: 100%;
     height: 100%;
   }
   .rodape-icones:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
   }
 }
