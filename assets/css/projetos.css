@@ -54,15 +54,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 10px;
   }
   .subtitulo h3 {
     color: #fff;
     font-size: 2rem;
   }
+  .detalhes {
+    border: solid 1px #fff;
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .informacoes {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    color: black;
+    cursor: pointer;
+  }
   .projetos {
     position: relative;
   }
-  .projetos button {
+  .projetos .button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -73,7 +91,7 @@
   button:last-of-type {
     right: 30px;
   }
-  .projetos button {
+  .projetos .button {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -81,9 +99,48 @@
     border: none;
     cursor: pointer;
   }
-  .projetos button img {
+  .projetos .button img {
     width: 100%;
     height: 100%;
+  }
+  .janela-modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(53, 56, 56, 0.589);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  .modal {
+    width: 60%;
+    height: 30%;
+    background-color: #ffffff8e;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+  }
+  .fechar {
+    position: absolute;
+    top: -5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  @keyframes abririnformacoes {
+    from {
+      opacity: 0;
+      transform: translate(0, -20px, -5px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(000);
+    }
+  }
+  .modal {
+    animation: abririnformacoes 1s;
   }
 }
 @media (min-width: 1601px) {
@@ -140,10 +197,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .subtitulo h3 {
     color: #fff;
     font-size: 3rem;
+  }
+  .detalhes {
+    border: solid 1px #fff;
+    width: 170px;
+    height: 70px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .detalhes a {
+    text-decoration: none;
+    color: #fff;
   }
   .projetos {
     position: relative;
@@ -224,13 +296,66 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .subtitulo h3 {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
-  .projetos button {
+  .detalhes {
+    border: solid 1px #fff;
+    width: 80px;
+    height: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .detalhes a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .projetos .button {
     display: none;
+  }
+  .janela-modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(53, 56, 56, 0.589);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  .modal {
+    width: 60%;
+    height: 30%;
+    background-color: #ffffff8e;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+  }
+  .fechar {
+    position: absolute;
+    top: -5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  @keyframes abririnformacoes {
+    from {
+      opacity: 0;
+      transform: translate(0, -20px, -5px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(000);
+    }
+  }
+  .modal {
+    animation: abririnformacoes 1s;
   }
 }
 
@@ -284,16 +409,70 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .subtitulo h3 {
     color: #fff;
     font-size: 2rem;
   }
-  .projetos button {
+  .detalhes {
+    border: solid 1px #fff;
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .detalhes a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .projetos .button {
     display: none;
   }
   .topo {
     display: none;
+  }
+  .janela-modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(53, 56, 56, 0.589);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  .modal {
+    width: 60%;
+    height: 30%;
+    background-color: #ffffff8e;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+  }
+  .fechar {
+    position: absolute;
+    top: -5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  @keyframes abririnformacoes {
+    from {
+      opacity: 0;
+      transform: translate(0, -20px, -5px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(000);
+    }
+  }
+  .modal {
+    animation: abririnformacoes 1s;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -348,104 +527,71 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .subtitulo h3 {
     color: #fff;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
-  .projetos button {
+  .detalhes {
+    border: solid 1px #fff;
+    width: 120px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .detalhes a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .projetos .button {
     display: none;
   }
 
-  .conteudo button {
+  .conteudo .button {
     display: none;
   }
-}
-@media (min-width: 1025px) and (max-width: 1200px) {
-  .projetos {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-  .titulo {
-    height: 20%;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .titulo h2 {
-    color: #fff;
-    font-size: 5rem;
-  }
-  .conteudo {
-    border: solid 1px #fff;
-    width: 80%;
-    height: 60%;
-    overflow-x: auto;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-  .cards {
-    border: solid 1px #fff;
-    display: inline-block;
-    height: 600px;
-    width: 500px;
-  }
-  .cards:hover {
-    transform: scale(1.1);
-  }
-  .img {
-    width: 100%;
-    height: 60%;
-  }
-  .img img {
+  .janela-modal {
     width: 100%;
     height: 100%;
-  }
-  .subtitulo {
-    height: 40%;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .subtitulo h3 {
-    color: #fff;
-    font-size: 3rem;
-  }
-  .projetos {
-    position: relative;
-  }
-  .projetos button {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    background-color: rgba(53, 56, 56, 0.589);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
   }
-  button:first-of-type {
-    left: 30px;
+  .modal {
+    width: 60%;
+    height: 30%;
+    background-color: #ffffff8e;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
   }
-  button:last-of-type {
-    right: 30px;
-  }
-  .projetos button {
-    width: 50px;
-    height: 50px;
+  .fechar {
+    position: absolute;
+    top: -5px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    background: none;
-    border: none;
     cursor: pointer;
   }
-  .projetos button img {
-    width: 100%;
-    height: 100%;
+  @keyframes abririnformacoes {
+    from {
+      opacity: 0;
+      transform: translate(0, -20px, -5px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(000);
+    }
+  }
+  .modal {
+    animation: abririnformacoes 1s;
   }
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
@@ -498,22 +644,39 @@
     height: 100%;
   }
   .subtitulo {
-    border: solid 1px #fff;
     height: 40%;
     width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 10px;
   }
   .subtitulo h3 {
     color: #fff;
     font-size: 2rem;
   }
+  .detalhes {
+    border: solid 1px #fff;
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .informacoes {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    color: black;
+    cursor: pointer;
+  }
   .projetos {
     position: relative;
   }
-  .projetos button {
+  .projetos .button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -524,7 +687,7 @@
   button:last-of-type {
     right: 30px;
   }
-  .projetos button {
+  .projetos .button {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -532,8 +695,47 @@
     border: none;
     cursor: pointer;
   }
-  .projetos button img {
+  .projetos .button img {
     width: 100%;
     height: 100%;
+  }
+  .janela-modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(53, 56, 56, 0.589);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  .modal {
+    width: 60%;
+    height: 30%;
+    background-color: #ffffff8e;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+  }
+  .fechar {
+    position: absolute;
+    top: -5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  @keyframes abririnformacoes {
+    from {
+      opacity: 0;
+      transform: translate(0, -20px, -5px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(000);
+    }
+  }
+  .modal {
+    animation: abririnformacoes 1s;
   }
 }

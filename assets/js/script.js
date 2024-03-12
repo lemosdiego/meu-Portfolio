@@ -61,17 +61,37 @@ let direita = document.getElementById("mover-direita");
 
 esquerda.addEventListener("click", moverEsquerda);
 direita.addEventListener("click", moverDireita);
+//Cards
+let titleCard1 = "Fynd my beer";
+let descriptionCard1 =
+  "Em andamento...Tem como objetivo me fornecer na tela uma lista de cervejarias a partir da localização do usuário.";
+let titleCard2 = "Formulário de Cadastro";
+let descriptionCard2 =
+  "Em andamento...Tem como objetivo um formulário de cadastro de usuário no banco de dados.";
+let titleCard4 = "Lista de tarefas";
+let descriptionCard4 =
+  "Lista de tarefas básica, feita no inicio do aprendizado tecnologias usadas HTML5 CSS3 JavaScript";
 
-function aparecerInformacoes() {
-  let aparecer = document.querySelector(".informacoes");
-  aparecer.style.display = "block";
-  console.log("apareceu");
+function abrirInformacoes(title, description) {
+  let body = document.querySelector("body");
+  const aparecer = document.getElementById("janela-modal");
+  aparecer.style.display = "flex";
+  aparecer.querySelector(".modal-title").innerHTML = title;
+  aparecer.querySelector(".modal-description").innerHTML = description;
+  body.style.overflow = "hidden";
 }
-function desaparecerInformacoes() {
-  let desaparecer = document.querySelector(".informacoes");
+function fecharInformacao() {
+  let body = document.querySelector("body");
+  const desaparecer = document.getElementById("janela-modal");
   desaparecer.style.display = "none";
+  body.style.overflow = "auto";
 }
-
+function fecharInformacaoGeral() {
+  let body = document.querySelector("body");
+  const desaparecerGeral = document.querySelector(".janela-modal");
+  desaparecerGeral.style.display = "none";
+  body.style.overflow = "auto";
+}
 //ferramentas
 
 let barra = document.getElementById("card1");
