@@ -76,29 +76,34 @@ let linkCard2 = "https://github.com/lemosdiego/Formulario.git";
 //modal3
 let titleCard3 = "Calculadora";
 let descriptionCard3 =
-  "Calculadora feita com base nos aprendizados de JavaScript";
+  "Calculadora feita com base nos aprendizados de JavaScript.";
 let linkCard3 = "https://github.com/lemosdiego";
 //modal4
 let titleCard4 = "Lista de tarefas";
 let descriptionCard4 =
   "Atividade feita com base nos aprendizados de JavaScript";
-("Lista de tarefas básica, feita no inicio do aprendizado tecnologias usadas HTML5 CSS3 JavaScript");
+("Lista de tarefas básica, feita no inicio do aprendizado tecnologias usadas HTML5 CSS3 JavaScript.");
 let linkCard4 = "https://github.com/lemosdiego";
 //modal5
 let titleCard5 = "Calculadora de IMC";
 let descriptionCard5 =
-  "Atividade feita com base nos aprendizados de JavaScript";
+  "Atividade feita com base nos aprendizados de JavaScript.";
 let linkCard5 = "https://github.com/lemosdiego/IMC-project.git";
 //modal6
 let titleCard6 = "Blog Angular";
 let descriptionCard6 =
-  "Atividade feita com base nos aprendizados do curso de Angular";
+  "Atividade feita com base nos aprendizados do curso de Angular.";
 let linkCard6 = "https://github.com/lemosdiego/blog-project.git";
 //modal7
 let titleCard7 = "Quizz Angular";
 let descriptionCard7 =
-  "Atividade realizada com base nos estudos do curso de Angular";
+  "Atividade realizada com base nos estudos do curso de Angular.";
 let linkCard7 = "https://github.com/lemosdiego/quizz_angular.git";
+//modal8
+let titleCard8 = "Portfolio Antigo";
+let descriptionCard8 =
+  "Projeto responsivo criado utilizando Next.JS e biblioteca Material UI.";
+let linkCard8 = "https://github.com/lemosdiego/portifolio2.git";
 //-------------------------------------------------------------------------------------------------------------------\\
 function abrirInformacoes(title, description, link) {
   let body = document.querySelector("body");

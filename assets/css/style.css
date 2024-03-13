@@ -80,6 +80,7 @@ li {
   border: solid 2px #fff;
   background: none;
   background-color: #094c90;
+  cursor: pointer;
 }
 .detalhes button {
   color: #fff;
