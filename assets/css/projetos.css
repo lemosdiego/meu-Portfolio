@@ -118,8 +118,20 @@
     height: 30%;
     background-color: #ffffff8e;
     backdrop-filter: blur(10px);
-    padding: 50px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-title {
+    font-size: 2rem;
+  }
+  .modal-description {
+    font-size: 1.2rem;
+    width: 40%;
+    margin-left: 30px;
   }
   .fechar {
     position: absolute;
@@ -128,6 +140,10 @@
     height: 30px;
     border-radius: 50%;
     cursor: pointer;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-weight: 900;
   }
   @keyframes abririnformacoes {
     from {
@@ -280,6 +296,7 @@
     display: inline-block;
     height: 200px;
     width: 300px;
+    margin-bottom: 10px;
   }
   .img {
     width: 100%;
@@ -395,6 +412,7 @@
     width: 410px;
     height: 340px;
     margin-top: 5px;
+    margin-bottom: 10px;
   }
   .img {
     height: 60%;
@@ -513,6 +531,7 @@
     width: 580px;
     height: 450px;
     margin-top: 5px;
+    margin-bottom: 10px;
   }
   .img {
     height: 60%;
@@ -670,7 +689,6 @@
     color: #fff;
     width: 100%;
     height: 100%;
-    color: black;
     cursor: pointer;
   }
   .projetos {

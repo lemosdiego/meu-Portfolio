@@ -37,6 +37,20 @@
                         href="#ferramentas"><li>Habilidades</li></a>
                     <a class="links-menu" href="#footer"><li>Contatos</li></a>
                 </ul>
+                <div class="menu-burguer">
+                    <img src="/assets/img/menubranco.svg" alt="Menu">
+                </div>
+            </div>
+            <div class="menu-lateral" >
+                <div class="container-lateral">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
             <div class="header-apresentacao-mobile">
                 <div class="header-apresentacao">
@@ -101,6 +115,9 @@
                 <button class="fechar" id="fechar" onclick="fecharInformacao()">X</button>
                 <h1 class="modal-title"></h1>
                 <p class="modal-description"></p>
+                <a class="modal-link" target="_blank" href="">
+                    <button class="repositorio">Repositório</button>
+                </a>
             </div>
         </div>
         <div class="titulo">
@@ -118,7 +135,7 @@
                     <div class="subtitulo">
                         <h3>Fynd My Beer</h3>
                         <div class="detalhes">
-                           <button class="informacoes" onclick="abrirInformacoes(titleCard1, descriptionCard1)">Informações</button>
+                           <button class="informacoes" onclick="abrirInformacoes(titleCard1, descriptionCard1, linkCard1)">Informações</button>
                         </div>
                     </div>
                 </div>
@@ -131,7 +148,7 @@
                     <div class="subtitulo">
                         <h3>Formulário de Cadastro</h3>
                         <div class="detalhes">
-                            <button class="informacoes" onclick="abrirInformacoes(titleCard2, descriptionCard2)">Informações</button>
+                            <button class="informacoes" onclick="abrirInformacoes(titleCard2, descriptionCard2, linkCard2)">Informações</button>
                         </div>
                     </div>
                 </div>
@@ -144,7 +161,7 @@
                     <div class="subtitulo" onmouseover="mostrarDetalhes()">
                         <h3>Calculadora</h3>
                         <div class="detalhes">
-                            <button class="informacoes" onclick="abrirInformacoes(titleCard2, descriptionCard2)">Informações</button>
+                            <button class="informacoes" onclick="abrirInformacoes(titleCard3, descriptionCard3, linkCard3)">Informações</button>
                         </div>
                     </div>
                 </div>
@@ -157,13 +174,12 @@
                     <div class="subtitulo">
                         <h3>Lista de tarefas</h3>
                         <div class="detalhes">
-                            <button class="informacoes" onclick="abrirInformacoes(titleCard4, descriptionCard4)">Informações</button>
+                            <button class="informacoes" onclick="abrirInformacoes(titleCard4, descriptionCard4, linkCard4)">Informações</button>
                         </div>
                     </div>
                 </div>
                 
-            </div>
-            
+            </div>       
             <div class="container-card">
                 <div class="cards">
                     <div class="img">
@@ -172,7 +188,33 @@
                     <div class="subtitulo">
                         <h3>Calculadora IMC</h3>
                         <div class="detalhes">
-                            <button class="informacoes" onclick="abrirInformacoes(titleCard2, descriptionCard2)">Informações</button>
+                            <button class="informacoes" onclick="abrirInformacoes(titleCard5, descriptionCard5, linkCard5)">Informações</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-card">
+                <div class="cards">
+                    <div class="img">
+                        <img src="/assets/img/projeto6.png" alt>
+                    </div>
+                    <div class="subtitulo">
+                        <h3>Blog Angular</h3>
+                        <div class="detalhes">
+                           <button class="informacoes" onclick="abrirInformacoes(titleCard6, descriptionCard6, linkCard6)">Informações</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-card">
+                <div class="cards">
+                    <div class="img">
+                        <img src="/assets/img/projeto7.png" alt>
+                    </div>
+                    <div class="subtitulo">
+                        <h3>Quizz Angular</h3>
+                        <div class="detalhes">
+                           <button class="informacoes" onclick="abrirInformacoes(titleCard7, descriptionCard7, linkCard7)">Informações</button>
                         </div>
                     </div>
                 </div>
@@ -190,54 +232,54 @@
             <div class="ferramentas-nivel">
                 <div class="niveis">
                     <div class="card-niveis">
-                        <div id="card1">
+                        <div  id="card1" class="niveis2">
                             <p>HTML 80%</p>
                         </div>
                     </div>
                     <div class="card-niveis">
-                        <div id="card2">
+                        <div  id="card2" class="niveis2">
                             <p>CSS 70%</p>
                         </div>
                     </div>
                     <div class="card-niveis">
-                        <div id="card3">
+                        <div  id="card3" class="niveis2">
                             <p>JavaScript 60%</p>
                         </div>
                     </div>
                     <div class="card-niveis">
-                        <div id="card4">
+                        <div  id="card4" class="niveis2">
                             <p>Git 60%</p>
                         </div>
                     </div>
                     <div class="card-niveis">
-                        <div id="card5">
+                        <div  id="card5" class="niveis2">
                             <p>Github 60%</p>
                         </div>
                     </div>
                 </div>
                 <div class="niveis">
                     <div class="card-niveis">
-                        <div id="card6">
+                        <div  id="card6" class="niveis2">
                             <p>React 50%</p>
                         </div>
                     </div>
                     <div class="card-niveis">
-                        <div id="card7">
+                        <div  id="card7" class="niveis2">
                             <p>Angular 50%</p>
                         </div>
                     </div>
                     <div class="card-niveis">
-                        <div id="card8">
+                        <div  id="card8" class="niveis2">
                             <p>TypeScript 50%</p>
                         </div>
                     </div>
                     <div class="card-niveis">
-                        <div id="card9">
+                        <div  id="card9" class="niveis2">
                             <p>Python 40%</p>
                         </div>
                     </div>
                     <div class="card-niveis">
-                        <div id="card10">
+                        <div  id="card10" class="niveis2">
                             <p>Php 40%</p>
                         </div>
                     </div>
@@ -250,7 +292,7 @@
             </div>
             <div class="lista-skills">
                 <div class="soft-skills">
-                    <p>Auto didata</p>
+                    <p>Segurança</p>
                 </div>
                 <div class="soft-skills">
                     <p>Motivação</p>
@@ -259,7 +301,7 @@
                     <p>Trabalho em equipe</p>
                 </div>
                 <div class="soft-skills">
-                    <p>Motivação</p>
+                    <p>Confiança</p>
                 </div>
                 <div class="soft-skills">
                     <p>Determinação</p>

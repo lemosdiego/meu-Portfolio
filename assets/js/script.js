@@ -62,22 +62,51 @@ let direita = document.getElementById("mover-direita");
 esquerda.addEventListener("click", moverEsquerda);
 direita.addEventListener("click", moverDireita);
 //Cards
+//modal1
 let titleCard1 = "Fynd my beer";
 let descriptionCard1 =
   "Em andamento...Tem como objetivo me fornecer na tela uma lista de cervejarias a partir da localização do usuário.";
+let linkCard1 = "https://github.com/lemosdiego/find-my-beer.git";
+
+//modal2
 let titleCard2 = "Formulário de Cadastro";
 let descriptionCard2 =
   "Em andamento...Tem como objetivo um formulário de cadastro de usuário no banco de dados.";
+let linkCard2 = "https://github.com/lemosdiego/Formulario.git";
+//modal3
+let titleCard3 = "Calculadora";
+let descriptionCard3 =
+  "Calculadora feita com base nos aprendizados de JavaScript";
+let linkCard3 = "https://github.com/lemosdiego";
+//modal4
 let titleCard4 = "Lista de tarefas";
 let descriptionCard4 =
-  "Lista de tarefas básica, feita no inicio do aprendizado tecnologias usadas HTML5 CSS3 JavaScript";
-
-function abrirInformacoes(title, description) {
+  "Atividade feita com base nos aprendizados de JavaScript";
+("Lista de tarefas básica, feita no inicio do aprendizado tecnologias usadas HTML5 CSS3 JavaScript");
+let linkCard4 = "https://github.com/lemosdiego";
+//modal5
+let titleCard5 = "Calculadora de IMC";
+let descriptionCard5 =
+  "Atividade feita com base nos aprendizados de JavaScript";
+let linkCard5 = "https://github.com/lemosdiego/IMC-project.git";
+//modal6
+let titleCard6 = "Blog Angular";
+let descriptionCard6 =
+  "Atividade feita com base nos aprendizados do curso de Angular";
+let linkCard6 = "https://github.com/lemosdiego/blog-project.git";
+//modal7
+let titleCard7 = "Quizz Angular";
+let descriptionCard7 =
+  "Atividade realizada com base nos estudos do curso de Angular";
+let linkCard7 = "https://github.com/lemosdiego/quizz_angular.git";
+//-------------------------------------------------------------------------------------------------------------------\\
+function abrirInformacoes(title, description, link) {
   let body = document.querySelector("body");
   const aparecer = document.getElementById("janela-modal");
   aparecer.style.display = "flex";
   aparecer.querySelector(".modal-title").innerHTML = title;
   aparecer.querySelector(".modal-description").innerHTML = description;
+  aparecer.querySelector(".modal-link").href = link;
   body.style.overflow = "hidden";
 }
 function fecharInformacao() {
