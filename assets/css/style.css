@@ -105,3 +105,15 @@ li {
 .menu-burguer {
   display: none;
 }
+.fechar {
+  position: absolute;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-weight: 900;
+}
