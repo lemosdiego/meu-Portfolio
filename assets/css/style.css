@@ -117,3 +117,50 @@ li {
   color: #fff;
   font-weight: 900;
 }
+#img1 {
+  background-image: url(/assets/img/projeto1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#img2 {
+  background-image: url(/assets/img/projeto8.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#img3 {
+  background-image: url(/assets/img/projeto5.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#img4 {
+  background-image: url(/assets/img/projeto3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#img5 {
+  background-image: url(/assets/img/projeto4.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#img6 {
+  background-image: url(/assets/img/projeto6.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#img7 {
+  background-image: url(/assets/img/projeto7.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#img8 {
+  background-image: url(/assets/img/projeto2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
