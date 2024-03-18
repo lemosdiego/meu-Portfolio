@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="/assets/css/footer.css">
     </head>
     <body>
-        <header class="header" id="inicio">
+        <header class="header" id="inicio" >
             <div class="header-menu">
                 <div class="header-logo">
                     <img class="animacao" src="/assets/img/logo.png" alt>
@@ -38,17 +38,18 @@
                     <a class="links-menu" href="#footer"><li>Contatos</li></a>
                 </ul>
                 <div class="menu-burguer">
-                    <img src="/assets/img/menubranco.svg" alt="Menu">
+                    <img class="abrir" src="/assets/img/menubranco.svg" alt="Menu" onclick="abrirMenuHamburguer()">
+                    <img class="fecharburguer" src="/assets/img/fecharbranco.svg" onclick="fecharMenuHamburguer()">
                 </div>
             </div>
-            <div class="menu-lateral" >
+            <div class="menu-lateral" id="burguer">
                 <div class="container-lateral">
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Home</li>
+                        <li>Perfil</li>
+                        <li>Projetos</li>
+                        <li>Habilidades</li>
+                        <li>Contatos</li>
                     </ul>
                 </div>
             </div>
@@ -178,7 +179,6 @@
                         </div>
                     </div>
                 </div>
-                
             </div>       
             <div class="container-card">
                 <div class="cards">

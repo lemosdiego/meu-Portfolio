@@ -22,6 +22,21 @@ function textoAnimado(texto, elemento) {
 }
 textoAnimado(titulo, tituloElemento);
 
+let abrirMenu = document.querySelector(".abrir");
+let fecharMenu = document.querySelector(".fecharburguer");
+let menuBurguer = document.getElementById("burguer");
+
+function abrirMenuHamburguer() {
+  abrirMenu.style.display = "none";
+  fecharMenu.style.display = "block";
+  menuBurguer.style.display = "flex";
+}
+function fecharMenuHamburguer() {
+  abrirMenu.style.display = "block";
+  fecharMenu.style.display = "none";
+  menuBurguer.style.display = "none";
+}
+
 //perfil
 function leiaMais() {
   let reticencias = document.getElementById("pontos");

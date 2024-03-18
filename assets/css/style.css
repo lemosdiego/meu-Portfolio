@@ -102,9 +102,7 @@ li {
 .repositorio:hover {
   transform: scale(1.1);
 }
-.menu-burguer {
-  display: none;
-}
+
 .fechar {
   position: absolute;
   top: -5px;

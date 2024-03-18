@@ -395,8 +395,30 @@
   .container-lateral {
     background-color: #ffffff8e;
     backdrop-filter: blur(10px);
-    height: 80%;
+    height: 100%;
     width: 80%;
+  }
+  .container-lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-lateral ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container-lateral ul li {
+    font-size: 1.5rem;
+  }
+  .fecharburguer {
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .abrir {
+    display: block;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
