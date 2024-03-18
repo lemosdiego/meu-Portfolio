@@ -260,6 +260,12 @@
   .esquerda {
     display: none;
   }
+  .menu-burguer {
+    display: none;
+  }
+  .menu-lateral {
+    display: none;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -463,6 +469,7 @@
     height: 60px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .header-logo {
     margin-left: 10px;
@@ -526,6 +533,57 @@
   .menu-icon img {
     width: 100%;
     height: 100%;
+  }
+  .menu-burguer {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  .menu-burguer img {
+    width: 100%;
+  }
+  .menu-lateral {
+    border: solid 1px #fff;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background-color: rgba(53, 56, 56, 0.589);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .container-lateral {
+    background-color: #ffffff8e;
+    backdrop-filter: blur(10px);
+    height: 100%;
+    width: 80%;
+  }
+  .container-lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-lateral ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container-lateral ul li {
+    font-size: 1.5rem;
+  }
+  .fecharburguer {
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .abrir {
+    display: block;
   }
 }
 
@@ -659,6 +717,12 @@
   .esquerda {
     display: none;
   }
+  .menu-burguer {
+    display: none;
+  }
+  .menu-lateral {
+    display: none;
+  }
 }
 
 /*telas grandes*/
@@ -789,6 +853,12 @@
     transform: scale(1.2);
   }
   .esquerda {
+    display: none;
+  }
+  .menu-burguer {
+    display: none;
+  }
+  .menu-lateral {
     display: none;
   }
 }
