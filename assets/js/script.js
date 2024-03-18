@@ -149,11 +149,11 @@ barra4.style.width = "60%";
 barra4.style.background = "#842791";
 
 let barra6 = document.getElementById("card6");
-barra6.style.width = "50%";
+barra6.style.width = "40%";
 barra6.style.background = "#087a9f";
 
 let barra7 = document.getElementById("card7");
-barra7.style.width = "50%";
+barra7.style.width = "40%";
 barra7.style.background = "#d6002f";
 
 let barra8 = document.getElementById("card8");
