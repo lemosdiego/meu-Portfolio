@@ -36,7 +36,11 @@ function fecharMenuHamburguer() {
   fecharMenu.style.display = "none";
   menuBurguer.style.display = "none";
 }
-
+function fecharMenuBurguerGeral() {
+  menuBurguer.style.display = "none";
+  abrirMenu.style.display = "block";
+  fecharMenu.style.display = "none";
+}
 //perfil
 function leiaMais() {
   let reticencias = document.getElementById("pontos");
