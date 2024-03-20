@@ -36,20 +36,16 @@ li {
     rgb(255, 243, 243) 0px 18px 36px -18px inset;
 }
 #perfil {
-  box-shadow: rgba(255, 255, 255, 0.829) 0px 30px 60px -12px inset,
-    rgb(231, 229, 229) 0px 18px 36px -18px inset;
+  box-shadow: rgba(255, 255, 255, 0.705) 0px 10px 50px;
 }
 #projetos {
-  box-shadow: rgba(255, 255, 255, 0.829) 0px 30px 60px -12px inset,
-    rgb(231, 229, 229) 0px 18px 36px -18px inset;
+  box-shadow: rgba(255, 255, 255, 0.705) 0px 10px 50px;
 }
 #ferramentas {
-  box-shadow: rgba(255, 255, 255, 0.829) 0px 30px 60px -12px inset,
-    rgb(231, 229, 229) 0px 18px 36px -18px inset;
+  box-shadow: rgba(255, 255, 255, 0.705) 0px 10px 50px;
 }
 #footer {
-  box-shadow: rgba(255, 255, 255, 0.829) 0px 30px 60px -12px inset,
-    rgb(231, 229, 229) 0px 18px 36px -18px inset;
+  box-shadow: rgba(255, 255, 255, 0.705) 0px 10px 50px;
 }
 .img p {
   z-index: 999;
@@ -77,9 +73,10 @@ li {
 }
 
 .informacoes {
-  border: solid 2px #fff;
+  border: 2px solid #fafafa;
   background: none;
   background-color: #094c90;
+  box-shadow: 3px 3px #fafafa;
   cursor: pointer;
 }
 .detalhes button {
@@ -126,4 +123,12 @@ li {
   text-decoration: none;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
   color: #fff;
+}
+.button-form {
+  cursor: pointer;
+}
+.foto-perfil {
+  box-shadow: rgba(255, 255, 255, 0.4) 5px 5px,
+    rgba(255, 254, 255, 0.3) 10px 10px, rgba(255, 253, 254, 0.2) 15px 15px,
+    rgba(255, 231, 246, 0.1) 20px 20px, rgba(221, 221, 221, 0.05) 25px 25px;
 }

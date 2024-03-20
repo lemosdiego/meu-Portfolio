@@ -4,7 +4,7 @@ let subtituloElement = document.getElementById("subtitulo");
 let titulo = "Olá, Me chamo Washington";
 let subtitulo =
   "Tenho 29 anos, sou um estudante apaixonado por tecnologia, faço Engenharia de Software e Desenvolvimento Web. Natural do Recife, atualmente resido em São Paulo. Estou determinado a conquistar um estágio na área e transformar minha vida como programador. Quero aproveitar ao máximo cada oportunidade para aprender e crescer, aplicando o que aprendo no mundo real. Vamos juntos nessa jornada de aprendizado e desenvolvimento!";
-let tempo = 50;
+let tempo = 20;
 
 function textoAnimado(texto, elemento) {
   let i = 0;
@@ -168,25 +168,25 @@ barra4.style.width = "60%";
 barra4.style.background = "#842791";
 
 let barra6 = document.getElementById("card6");
-barra6.style.width = "40%";
+barra6.style.width = "30%";
 barra6.style.background = "#087a9f";
 
 let barra7 = document.getElementById("card7");
-barra7.style.width = "40%";
+barra7.style.width = "30%";
 barra7.style.background = "#d6002f";
 
 let barra8 = document.getElementById("card8");
-barra8.style.width = "50%";
+barra8.style.width = "40%";
 barra8.style.background = "#2f74c0";
 
 let barra9 = document.getElementById("card9");
 barra9.style.color = "#3a719c";
-barra9.style.width = "40%";
+barra9.style.width = "30%";
 barra9.style.background = "#3a719c";
 
 let barra10 = document.getElementById("card10");
 barra10.style.color = "#7377ad";
-barra10.style.width = "40%";
+barra10.style.width = "30%";
 barra10.style.background = "#7377ad";
 
 //footer
