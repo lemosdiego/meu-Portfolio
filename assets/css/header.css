@@ -3,7 +3,6 @@
     height: 100vh;
     background: url(/assets/img/background.png);
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
     opacity: 2;
     box-shadow: rgba(255, 255, 255, 0.411) 0px 30px 60px -12px inset,
