@@ -31,7 +31,7 @@ li {
   border: solid 1px #fff;
 }
 
-#header {
+/* #header {
   box-shadow: rgba(255, 255, 255, 0.829) 0px 30px 60px -12px inset,
     rgb(255, 243, 243) 0px 18px 36px -18px inset;
 }
@@ -46,7 +46,7 @@ li {
 }
 #footer {
   box-shadow: rgba(255, 255, 255, 0.705) 0px 10px 50px;
-}
+} */
 .img p {
   z-index: 999;
   color: #fff;
