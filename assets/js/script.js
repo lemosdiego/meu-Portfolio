@@ -81,6 +81,10 @@ let direita = document.getElementById("mover-direita");
 esquerda.addEventListener("click", moverEsquerda);
 direita.addEventListener("click", moverDireita);
 //Cards
+//modal0
+let titleCard0 = "Previsão do tempo"
+let descriptionCard0 = "Busque o clima da sua cidade"
+let linkCard0 = "https://github.com/lemosdiego/previsao-do-tempo.git"
 //modal1
 let titleCard1 = "Fynd my beer";
 let descriptionCard1 =

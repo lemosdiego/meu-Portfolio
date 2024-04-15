@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="/assets/img/portfolio.ico"
-            type="image/x-icon">
-        <title>Portfolio</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
-            rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="/assets/css/style.css">
-        <link rel="stylesheet" href="/assets/css/header.css">
-        <link rel="stylesheet" href="/assets/css/perfil.css">
-        <link rel="stylesheet" href="/assets/css/projetos.css">
-        <link rel="stylesheet" href="/assets/css/ferramentas.css">
-        <link rel="stylesheet" href="/assets/css/footer.css">
-    </head>
-    <body>
-        <header class="header" id="inicio" >
-            <div class="header-menu">
-                <div class="header-logo">
-                    <img class="animacao" src="/assets/img/logo.png" alt>
-                </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/portfolio.ico" type="image/x-icon">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/perfil.css">
+    <link rel="stylesheet" href="/assets/css/projetos.css">
+    <link rel="stylesheet" href="/assets/css/ferramentas.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+</head>
+
+<body>
+    <header class="header" id="inicio">
+        <div class="header-menu">
+            <div class="header-logo">
+                <img class="animacao" src="/assets/img/logo.png" alt>
+            </div>
+            <ul>
+                <a class="links-menu" href="#inicio">
+                    <li>home</li>
+                </a>
+                <a class="links-menu" href="#perfil">
+                    <li>perfil</li>
+                </a>
+                <a class="links-menu" href="#projetos">
+                    <li>projetos</li>
+                </a>
+                <a class="links-menu" href="#ferramentas">
+                    <li>Habilidades</li>
+                </a>
+                <a class="links-menu" href="#footer">
+                    <li>Contatos</li>
+                </a>
+            </ul>
+            <div class="menu-burguer">
+                <img class="abrir" src="/assets/img/menubranco.svg" alt="Menu" onclick="abrirMenuHamburguer()">
+                <img class="fecharburguer" src="/assets/img/fecharbranco.svg" onclick="fecharMenuHamburguer()">
+            </div>
+        </div>
+        <div class="menu-lateral" id="burguer" onclick="fecharMenuBurguerGeral()">
+            <div class="container-lateral">
                 <ul>
-                    <a class="links-menu" href="#inicio"><li>home</li></a>
-                    <a class="links-menu" href="#perfil"><li>perfil</li></a>
-                    <a class="links-menu" href="#projetos"><li>projetos</li></a>
-                    <a class="links-menu"
-                        href="#ferramentas"><li>Habilidades</li></a>
-                    <a class="links-menu" href="#footer"><li>Contatos</li></a>
+                    <li class="menu-lista"><a href="#perfil">Perfil</a></li>
+                    <li class="menu-lista"><a href="#projetos">Projetos</a></li>
+                    <li class="menu-lista"><a href="#ferramentas">Habilidades</a></li>
+                    <li class="menu-lista"><a href="#footer">Contatos</a></li>
                 </ul>
-                <div class="menu-burguer">
-                    <img class="abrir" src="/assets/img/menubranco.svg" alt="Menu" onclick="abrirMenuHamburguer()">
-                    <img class="fecharburguer" src="/assets/img/fecharbranco.svg" onclick="fecharMenuHamburguer()">
+            </div>
+        </div>
+        <div class="header-apresentacao-mobile">
+            <div class="header-apresentacao">
+                <div class="header-titulo">
+                    <h2 id="titulo"></h2>
+                </div>
+                <div class="header-subtitulo">
+                    <p id="subtitulo"></p>
+                </div>
+                <div class="header-links">
                 </div>
             </div>
-            <div class="menu-lateral" id="burguer" onclick="fecharMenuBurguerGeral()">
-                <div class="container-lateral">
-                    <ul>
-                        <li class="menu-lista"><a href="#perfil">Perfil</a></li>
-                        <li class="menu-lista"><a href="#projetos">Projetos</a></li>
-                        <li class="menu-lista"><a href="#ferramentas">Habilidades</a></li>
-                        <li class="menu-lista"><a href="#footer">Contatos</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="header-apresentacao-mobile">
-                <div class="header-apresentacao">
-                    <div class="header-titulo">
-                        <h2 id="titulo"></h2>
-                    </div>
-                    <div class="header-subtitulo">
-                        <p id="subtitulo"></p>
-                    </div>
-                    <div class="header-links">
-                    </div>
-                </div>
-            </div>
+        </div>
         </div>
         <div class="topo">
             <a href="#inicio">
@@ -77,13 +85,18 @@
                 <h3>Sobre mim</h3>
             </div>
             <div class="perfil-paragrafo">
-                <p class="text-animacao"> Quando não estou no mundo virtual, eu curto aventuras ao ar livre. Adoro trilhas, futebol, Mountain Bike. Estou sempre em busca de novos desafios e experiências, sejam eles relacionados à tecnologia ou à exploração da natureza. Também adoro viajar, explorar novos lugares e culturas, e também sou gamer. Minha jornada pela tecnologia começou como uma fuga da vida cotidiana, mas logo se transformou em uma verdadeira paixão.<span id="pontos">.</span> <span
-                        id="mais"> Acredito que a tecnologia é uma oportunidade de transformar essa paixão em uma carreira significativa. Estou comprometido em aprender e crescer nesta área e espero contribuir e trabalhar em algo que realmente amo.</span> <button id="leiamais"
-                        onclick="leiaMais()">leia mais </button></p>
+                <p class="text-animacao"> Quando não estou no mundo virtual, eu curto aventuras ao ar livre. Adoro
+                    trilhas, futebol, Mountain Bike. Estou sempre em busca de novos desafios e experiências, sejam eles
+                    relacionados à tecnologia ou à exploração da natureza. Também adoro viajar, explorar novos lugares e
+                    culturas, e também sou gamer. Minha jornada pela tecnologia começou como uma fuga da vida cotidiana,
+                    mas logo se transformou em uma verdadeira paixão.<span id="pontos">.</span> <span id="mais">
+                        Acredito que a tecnologia é uma oportunidade de transformar essa paixão em uma carreira
+                        significativa. Estou comprometido em aprender e crescer nesta área e espero contribuir e
+                        trabalhar em algo que realmente amo.</span> <button id="leiamais" onclick="leiaMais()">leia mais
+                    </button></p>
             </div>
             <div class="extra">
-                <a href="/assets/img/curriculo.pdf"
-                    download><button>Curriculo</button></a>
+                <a href="/assets/img/curriculo.pdf" download><button>Curriculo</button></a>
             </div>
         </div>
         <div class="perfil-img">
@@ -96,7 +109,7 @@
             <h3>Sobre mim</h3>
         </div>
     </section>
-    <section class="projetos" id="projetos" >
+    <section class="projetos" id="projetos">
         <div class="janela-modal" id="janela-modal" onclick="fecharInformacaoGeral()">
             <div class="modal">
                 <button class="fechar" id="fechar" onclick="fecharInformacao()">X</button>
@@ -111,18 +124,33 @@
             <h2>Projetos</h2>
         </div>
         <button class="esquerda button" id="mover-esquerda">
-            <img src="/assets/img/setaesquerdabranca.svg" >
+            <img src="/assets/img/setaesquerdabranca.svg">
         </button>
         <div class="conteudo">
             <div class="container-card">
                 <div class="cards">
-                    <div class="img" >
+                    <div class="img">
+                        <img src="/assets/img/image.png" alt="Fynd my beer">
+                    </div>
+                    <div class="subtitulo">
+                        <h3>Previsão do tempo</h3>
+                        <div class="detalhes">
+                            <button class="informacoes"
+                                onclick="abrirInformacoes(titleCard0, descriptionCard0, linkCard0)">Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-card">
+                <div class="cards">
+                    <div class="img">
                         <img src="/assets/img/projeto1.svg" alt="Fynd my beer">
                     </div>
                     <div class="subtitulo">
                         <h3>Fynd My Beer</h3>
                         <div class="detalhes">
-                           <button class="informacoes" onclick="abrirInformacoes(titleCard1, descriptionCard1, linkCard1)">Detalhes</button>
+                            <button class="informacoes"
+                                onclick="abrirInformacoes(titleCard1, descriptionCard1, linkCard1)">Detalhes</button>
                         </div>
                     </div>
                 </div>
@@ -135,20 +163,22 @@
                     <div class="subtitulo">
                         <h3>Portfolio Antigo</h3>
                         <div class="detalhes">
-                            <button class="informacoes" onclick="abrirInformacoes(titleCard8, descriptionCard8, linkCard8)">Detalhes</button>
+                            <button class="informacoes"
+                                onclick="abrirInformacoes(titleCard8, descriptionCard8, linkCard8)">Detalhes</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container-card">
                 <div class="cards">
-                    <div class="img" >
+                    <div class="img">
                         <img src="/assets/img/projeto5.svg" alt="Calculadora">
                     </div>
                     <div class="subtitulo" onmouseover="mostrarDetalhes()">
                         <h3>Calculadora</h3>
                         <div class="detalhes">
-                            <button class="informacoes" onclick="abrirInformacoes(titleCard3, descriptionCard3, linkCard3)">Detalhes</button>
+                            <button class="informacoes"
+                                onclick="abrirInformacoes(titleCard3, descriptionCard3, linkCard3)">Detalhes</button>
                         </div>
                     </div>
                 </div>
@@ -161,11 +191,12 @@
                     <div class="subtitulo">
                         <h3>Lista de tarefas</h3>
                         <div class="detalhes">
-                            <button class="informacoes" onclick="abrirInformacoes(titleCard4, descriptionCard4, linkCard4)">Detalhes</button>
+                            <button class="informacoes"
+                                onclick="abrirInformacoes(titleCard4, descriptionCard4, linkCard4)">Detalhes</button>
                         </div>
                     </div>
                 </div>
-            </div>       
+            </div>
             <div class="container-card">
                 <div class="cards">
                     <div class="img">
@@ -174,7 +205,8 @@
                     <div class="subtitulo">
                         <h3>Calculadora IMC</h3>
                         <div class="detalhes">
-                            <button class="informacoes" onclick="abrirInformacoes(titleCard5, descriptionCard5, linkCard5)">Detalhes</button>
+                            <button class="informacoes"
+                                onclick="abrirInformacoes(titleCard5, descriptionCard5, linkCard5)">Detalhes</button>
                         </div>
                     </div>
                 </div>
@@ -187,7 +219,8 @@
                     <div class="subtitulo">
                         <h3>Blog Angular</h3>
                         <div class="detalhes">
-                           <button class="informacoes" onclick="abrirInformacoes(titleCard6, descriptionCard6, linkCard6)">Detalhes</button>
+                            <button class="informacoes"
+                                onclick="abrirInformacoes(titleCard6, descriptionCard6, linkCard6)">Detalhes</button>
                         </div>
                     </div>
                 </div>
@@ -200,12 +233,13 @@
                     <div class="subtitulo">
                         <h3>Quizz Angular</h3>
                         <div class="detalhes">
-                           <button class="informacoes" onclick="abrirInformacoes(titleCard7, descriptionCard7, linkCard7)">Detalhes</button>
+                            <button class="informacoes"
+                                onclick="abrirInformacoes(titleCard7, descriptionCard7, linkCard7)">Detalhes</button>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
         </div>
         <button class="direita button" id="mover-direita">
             <img src="/assets/img/setadireitabranca.svg" alt>
@@ -219,54 +253,54 @@
             <div class="ferramentas-nivel">
                 <div class="niveis">
                     <div class="card-niveis">
-                        <div  id="card1" class="niveis2">
+                        <div id="card1" class="niveis2">
                             <p>HTML5 80%</p>
                         </div>
                     </div>
                     <div class="card-niveis">
-                        <div  id="card2" class="niveis2">
+                        <div id="card2" class="niveis2">
                             <p>CSS3 70%</p>
                         </div>
                     </div>
                     <div class="card-niveis">
-                        <div  id="card3" class="niveis2">
+                        <div id="card3" class="niveis2">
                             <p>JavaScript 60%</p>
                         </div>
                     </div>
                     <div class="card-niveis">
-                        <div  id="card4" class="niveis2">
+                        <div id="card4" class="niveis2">
                             <p>Git 60%</p>
                         </div>
                     </div>
                     <div class="card-niveis">
-                        <div  id="card5" class="niveis2">
+                        <div id="card5" class="niveis2">
                             <p>Github 60%</p>
                         </div>
                     </div>
                 </div>
                 <div class="niveis">
                     <div class="card-niveis">
-                        <div  id="card6" class="niveis2">
+                        <div id="card6" class="niveis2">
                             <p>React 30%</p>
                         </div>
                     </div>
                     <div class="card-niveis">
-                        <div  id="card7" class="niveis2">
+                        <div id="card7" class="niveis2">
                             <p>Angular 30%</p>
                         </div>
                     </div>
                     <div class="card-niveis">
-                        <div  id="card8" class="niveis2">
+                        <div id="card8" class="niveis2">
                             <p>TypeScript 40%</p>
                         </div>
                     </div>
                     <div class="card-niveis">
-                        <div  id="card9" class="niveis2">
+                        <div id="card9" class="niveis2">
                             <p>Python 30%</p>
                         </div>
                     </div>
                     <div class="card-niveis">
-                        <div  id="card10" class="niveis2">
+                        <div id="card10" class="niveis2">
                             <p>Php 30%</p>
                         </div>
                     </div>
@@ -301,91 +335,87 @@
             <h3>Entre em contato</h3>
         </div>
         <div class="formulario">
-            <form action="https://api.staticforms.xyz/submit"
-                        method="post">
-                    <input type="hidden" name="accessKey"
-                            value="71bf7d3e-399a-41d9-a329-ea4cb2e65419">
-                    <input type="hidden" name="redirectTo"
-                            value="http://192.168.2.14:5500/">
-                    <label for="inputNome">Nome</label>
-                    <input type="text" id="inputNome" name="name" required
-                            maxlength="25" minlength="2" placeholder="Washington">
-                    <label for="inputNome">Sobrenome</label>
-                    <input type="text" id="inputNome" name="name" required
-                            maxlength="25" minlength="2" placeholder="Lemos">
-                    <label for="inputEmail">Email</label>
-                    <input type="email" id="inputEmail" name="email"
-                            required maxlength="40" placeholder="email@email.com">
-                    <label for="textAreaMensagem">Mensagem</label>
-                    <div class="text-area">
-                        <textarea name="message"
-                                id="textAreaMensagem" required maxlength="100"
-                                cols="50" rows="4">
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="hidden" name="accessKey" value="71bf7d3e-399a-41d9-a329-ea4cb2e65419">
+                <input type="hidden" name="redirectTo" value="http://192.168.2.14:5500/">
+                <label for="inputNome">Nome</label>
+                <input type="text" id="inputNome" name="name" required maxlength="25" minlength="2"
+                    placeholder="Washington">
+                <label for="inputNome">Sobrenome</label>
+                <input type="text" id="inputNome" name="name" required maxlength="25" minlength="2" placeholder="Lemos">
+                <label for="inputEmail">Email</label>
+                <input type="email" id="inputEmail" name="email" required maxlength="40" placeholder="email@email.com">
+                <label for="textAreaMensagem">Mensagem</label>
+                <div class="text-area">
+                    <textarea name="message" id="textAreaMensagem" required maxlength="100" cols="50" rows="4">
                         </textarea>
-                    </div>
-                    <button class="button-form">Enviar</button>
+                </div>
+                <button class="button-form">Enviar</button>
             </form>
         </div>
-            <div class="rodape">
-                <div class="rodape-icones">
-                   <a href="https://www.linkedin.com/in/washington-lemos-033177186/" target="_blank"><img src="/assets/img/linkedin.svg" alt="Linkedin"></a>
-                </div>
-                <div class="rodape-icones">
-                    <a href="https://github.com/lemosdiego" target="_blank"><img src="/assets/img/github.svg" alt="Github"></a>
-                </div>
-                <div class="rodape-icones">
-                    <a href="https://WA.me/5581982383803" target="_blank"><img src="/assets/img/whatsapp.svg" alt="Whatsapp"></a>
-                </div>
-                <div class="rodape-icones">
-                    <a href="https://ig.me/m/washington.lemos_" target="_blank"><img src="/assets/img/instagram.svg" alt="Instagram"></a>
-                </div>
+        <div class="rodape">
+            <div class="rodape-icones">
+                <a href="https://www.linkedin.com/in/washington-lemos-033177186/" target="_blank"><img
+                        src="/assets/img/linkedin.svg" alt="Linkedin"></a>
             </div>
-        </footer>
-        <div class="menu-mobile">
-           <div class="menu-container">
+            <div class="rodape-icones">
+                <a href="https://github.com/lemosdiego" target="_blank"><img src="/assets/img/github.svg"
+                        alt="Github"></a>
+            </div>
+            <div class="rodape-icones">
+                <a href="https://WA.me/5581982383803" target="_blank"><img src="/assets/img/whatsapp.svg"
+                        alt="Whatsapp"></a>
+            </div>
+            <div class="rodape-icones">
+                <a href="https://ig.me/m/washington.lemos_" target="_blank"><img src="/assets/img/instagram.svg"
+                        alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <div class="menu-mobile">
+        <div class="menu-container">
             <div class="menu-icon">
                 <a href="#inicio"><img src="/assets/img/home.svg" alt></a>
             </div>
             <div class="menu-nome">
                 <p>Home</p>
             </div>
-           </div>
-           <div class="menu-container">
+        </div>
+        <div class="menu-container">
             <div class="menu-icon">
                 <a href="#perfil"> <img src="/assets/img/perfil.svg" alt></a>
             </div>
             <div class="menu-nome">
                 <p>Perfil</p>
             </div>
-           </div>
-           <div class="menu-container">
+        </div>
+        <div class="menu-container">
             <div class="menu-icon">
-                <a href="#projetos"> <img src="/assets/img/projetoswhite.svg"alt></a>
+                <a href="#projetos"> <img src="/assets/img/projetoswhite.svg" alt></a>
             </div>
             <div class="menu-nome">
                 <p>Projetos</p>
             </div>
-           </div>
-          <div class="menu-container">
+        </div>
+        <div class="menu-container">
             <div class="menu-icon">
-                <a href="#ferramentas"> <img
-                        src="/assets/img/ferramentawhite.svg" alt></a>
+                <a href="#ferramentas"> <img src="/assets/img/ferramentawhite.svg" alt></a>
             </div>
             <div class="menu-nome">
                 <p>Habilidades</p>
             </div>
-          </div>
-            <div class="menu-container">
-                <div class="menu-icon">
-                    <a href="#footer"><img src="/assets/img/contatobranco.svg"
-                            alt></a>
-                </div>
-                <div class="menu-nome">
-                    <p>Contatos</p>
-                </div>
+        </div>
+        <div class="menu-container">
+            <div class="menu-icon">
+                <a href="#footer"><img src="/assets/img/contatobranco.svg" alt></a>
+            </div>
+            <div class="menu-nome">
+                <p>Contatos</p>
             </div>
         </div>
+    </div>
 
-        <script src="/assets/js/script.js"></script>
-    </body>
+    <script src="/assets/js/script.js"></script>
+</body>
+
 </html>
