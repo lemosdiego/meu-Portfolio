@@ -13,6 +13,7 @@ body {
   background: #010127;
 }
 
+
 li {
   list-style: none;
 }
@@ -29,6 +30,10 @@ li {
 /*Ferramentas*/
 .card-niveis {
   border: solid 1px #fff;
+}
+
+.links-menu {
+  font-weight: 500;
 }
 
 /* #header {
