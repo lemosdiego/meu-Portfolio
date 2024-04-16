@@ -4,10 +4,12 @@
     background: url(/assets/img/background.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     opacity: 2;
     box-shadow: rgba(255, 255, 255, 0.411) 0px 30px 60px -12px inset,
       rgba(202, 195, 195, 0.3) 0px 18px 36px -18px;
   }
+
   .header-menu {
     width: 100%;
     height: 60px;
@@ -22,9 +24,11 @@
     box-shadow: rgb(254, 255, 255) 0px 2px 4px 0px,
       rgba(249, 252, 253, 0.32) 0px 2px 16px 0px;
   }
+
   .header-menu ul a:hover {
     transform: scale(2);
   }
+
   .header-menu h1 {
     width: 30%;
     height: 40px;
@@ -39,22 +43,27 @@
     height: 50px;
     border-radius: 50px;
   }
+
   .header-logo img {
     width: 100%;
     border-radius: 50%;
   }
+
   .animacao {
     opacity: 0;
     animation: surgirlogo 20s ease forwards;
   }
+
   @keyframes surgirlogo {
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
   }
+
   .header-menu ul {
     width: 60%;
     display: flex;
@@ -67,25 +76,36 @@
     text-transform: uppercase;
     font-weight: 100;
   }
+
   .links-menu {
     text-decoration: none;
     color: #fff;
   }
+
+  .apresentacao {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .header-apresentacao {
-    width: 40%;
-    margin-top: 60px;
-    margin-left: 50px;
+    width: 50%;
     color: #fff;
     padding-top: 40px;
   }
+
   .header-titulo {
     font-size: 1.5rem;
     padding-top: 40px;
   }
+
   #titulo {
     font-style: italic;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
   }
+
   #subtitulo {
     font-style: italic;
     line-height: 30px;
@@ -93,26 +113,32 @@
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
   }
+
   .header-subtitulo {
     font-size: 1.4rem;
     padding: 4px;
   }
+
   .header-links {
     display: flex;
     flex-direction: row;
     gap: 10px;
   }
+
   .header-icons {
     width: 50px;
     height: 50px;
     border-radius: 50px;
   }
+
   .icon {
     width: 100%;
   }
+
   .menu-mobile {
     display: none;
   }
+
   .topo {
     position: fixed;
     bottom: 30px;
@@ -123,33 +149,41 @@
     cursor: pointer;
     z-index: 1000;
   }
+
   .topo img {
     width: 100%;
     height: 100%;
   }
+
   .topo:hover a img {
     transform: scale(1.2);
   }
+
   .esquerda {
     display: none;
   }
+
   .menu-burguer {
     display: none;
   }
+
   .menu-lateral {
     display: none;
   }
 }
+
 @media (min-width: 1601px) {
   .header {
     height: 100vh;
     background: url(/assets/img/background.png);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     opacity: 2;
     box-shadow: rgba(255, 255, 255, 0.411) 0px 30px 60px -12px inset,
       rgba(202, 195, 195, 0.3) 0px 18px 36px -18px;
   }
+
   .header-menu {
     width: 100%;
     height: 80px;
@@ -164,9 +198,11 @@
     box-shadow: rgb(254, 255, 255) 0px 2px 4px 0px,
       rgba(249, 252, 253, 0.32) 0px 2px 16px 0px;
   }
+
   .header-menu ul a:hover {
     transform: scale(2);
   }
+
   .header-logo {
     width: 70px;
     height: 70px;
@@ -177,18 +213,22 @@
     width: 100%;
     border-radius: 50%;
   }
+
   .animacao {
     opacity: 0;
     animation: surgirlogo 20s ease forwards;
   }
+
   @keyframes surgirlogo {
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
   }
+
   .header-menu ul {
     width: 60%;
     display: flex;
@@ -201,25 +241,36 @@
     text-transform: uppercase;
     font-weight: 100;
   }
+
   .links-menu {
     text-decoration: none;
     color: #fff;
   }
+
+  .apresentacao {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .header-apresentacao {
     width: 50%;
-    margin-top: 70px;
-    margin-left: 60px;
     color: #fff;
     padding-top: 40px;
   }
+
   .header-titulo {
     font-size: 3rem;
     padding-top: 60px;
   }
+
   #titulo {
     font-style: italic;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
   }
+
   #subtitulo {
     font-style: italic;
     line-height: 50px;
@@ -227,26 +278,32 @@
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
   }
+
   .header-subtitulo {
     font-size: 2rem;
     padding: 4px;
   }
+
   .header-links {
     display: flex;
     flex-direction: row;
     gap: 10px;
   }
+
   .header-icons {
     width: 50px;
     height: 50px;
     border-radius: 50px;
   }
+
   .icon {
     width: 100%;
   }
+
   .menu-mobile {
     display: none;
   }
+
   .topo {
     position: fixed;
     bottom: 20px;
@@ -257,19 +314,24 @@
     cursor: pointer;
     z-index: 1000;
   }
+
   .topo img {
     width: 100%;
     height: 100%;
   }
+
   .topo:hover a img {
     transform: scale(1.2);
   }
+
   .esquerda {
     display: none;
   }
+
   .menu-burguer {
     display: none;
   }
+
   .menu-lateral {
     display: none;
   }
@@ -279,21 +341,26 @@
   border {
     overflow-x: hidden;
   }
+
   .header {
     position: relative;
     height: 100vh;
     background: url(/assets/img/background-mobile.png);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
   }
+
   .header-menu ul {
     display: none;
   }
+
   .header-apresentacao-mobile {
     position: relative;
     width: 100%;
     height: 90vh;
   }
+
   .header-apresentacao {
     width: 94%;
     text-align: left;
@@ -304,11 +371,13 @@
     color: #fff;
     margin-left: 0;
   }
+
   .header-menu h1 {
     font-size: 1rem;
     width: 100%;
     margin-left: 10px;
   }
+
   .header-menu {
     position: static;
     display: flex;
@@ -319,30 +388,37 @@
     align-items: center;
     justify-content: space-between;
   }
+
   .header-logo {
     margin-left: 10px;
     width: 40px;
     height: 40px;
   }
+
   .header-logo img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
   }
+
   .header-titulo {
     text-align: center;
   }
+
   .header-titulo h2 {
     font-size: 2.2rem;
   }
+
   .header-subtitulo p {
     font-size: 1.2rem;
     margin-top: 10px;
   }
+
   #titulo {
     font-style: italic;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
   }
+
   #subtitulo {
     font-style: italic;
     line-height: 30px;
@@ -354,6 +430,7 @@
   .topo {
     display: none;
   }
+
   .menu-burguer {
     color: #fff;
     width: 40px;
@@ -362,6 +439,7 @@
     border-radius: 50%;
     margin-right: 15px;
   }
+
   .menu-burguer img {
     width: 100%;
   }
@@ -388,20 +466,24 @@
     height: 40px;
     border-radius: 50px;
   }
+
   .menu-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .menu-nome {
     color: #fff;
     font-size: 12px;
   }
+
   .menu-icon img {
     width: 100%;
     height: 100%;
   }
+
   .menu-lateral {
     width: 100%;
     height: 80%;
@@ -413,6 +495,7 @@
     align-items: center;
     display: none;
   }
+
   .container-lateral {
     border-radius: 20px;
     background-color: #01012759;
@@ -420,49 +503,60 @@
     height: 100%;
     width: 70%;
   }
+
   .container-lateral {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .container-lateral ul {
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
+
   .container-lateral ul li {
     font-size: 1.6rem;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
   }
+
   .fecharburguer {
     width: 100%;
     height: 100%;
     display: none;
   }
+
   .abrir {
     display: block;
   }
 }
+
 @media (min-width: 481px) and (max-width: 768px) {
   border {
     overflow-x: hidden;
   }
+
   .header {
     position: relative;
     height: 100vh;
     background: url(/assets/img/background-mobile.png);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
   }
+
   .header-menu ul {
     display: none;
   }
+
   .header-apresentacao-mobile {
     position: relative;
     width: 100%;
     height: 90vh;
   }
+
   .header-apresentacao {
     width: 94%;
     text-align: left;
@@ -473,11 +567,13 @@
     color: #fff;
     margin-left: 0;
   }
+
   .header-menu h1 {
     font-size: 1rem;
     width: 100%;
     margin-left: 10px;
   }
+
   .header-menu {
     position: static;
     display: flex;
@@ -488,30 +584,37 @@
     align-items: center;
     justify-content: space-between;
   }
+
   .header-logo {
     margin-left: 10px;
     width: 50px;
     height: 50px;
   }
+
   .header-logo img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
   }
+
   .header-titulo {
     text-align: center;
   }
+
   .header-titulo h2 {
     font-size: 2.5rem;
   }
+
   .header-subtitulo p {
     font-size: 1.5rem;
     margin-top: 10px;
   }
+
   #titulo {
     font-style: italic;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
   }
+
   #subtitulo {
     font-style: italic;
     line-height: 30px;
@@ -540,16 +643,19 @@
     box-shadow: rgb(255, 254, 254) 0px 1px 3px, rgb(245, 243, 243) 0px 1px 2px;
     overflow-x: hidden;
   }
+
   .menu-nome {
     color: #fff;
     font-size: 14px;
   }
+
   .menu-container {
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .menu-icon {
     width: 40px;
     height: 40px;
@@ -560,6 +666,7 @@
     width: 100%;
     height: 100%;
   }
+
   .menu-burguer {
     color: #fff;
     width: 40px;
@@ -568,9 +675,11 @@
     border-radius: 50%;
     margin-right: 15px;
   }
+
   .menu-burguer img {
     width: 100%;
   }
+
   .menu-lateral {
     width: 100%;
     height: 90%;
@@ -582,6 +691,7 @@
     align-items: center;
     display: none;
   }
+
   .container-lateral {
     background-color: #01012759;
     backdrop-filter: blur(10px);
@@ -589,26 +699,31 @@
     width: 70%;
     border-radius: 20px;
   }
+
   .container-lateral {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .container-lateral ul {
     display: flex;
     flex-direction: column;
     gap: 40px;
   }
+
   .container-lateral ul li {
     font-size: 2rem;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
   }
+
   .fecharburguer {
     width: 100%;
     height: 100%;
     display: none;
   }
+
   .abrir {
     display: block;
   }
@@ -622,7 +737,9 @@
     background: url(/assets/img/background-mobile.png);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
   }
+
   .header-menu {
     width: 100%;
     height: 70px;
@@ -637,9 +754,11 @@
     box-shadow: rgb(254, 255, 255) 0px 2px 4px 0px,
       rgba(249, 252, 253, 0.32) 0px 2px 16px 0px;
   }
+
   .header-menu ul a:hover {
     transform: scale(1.2);
   }
+
   .header-menu h1 {
     width: 30%;
     height: 40px;
@@ -654,22 +773,27 @@
     height: 50px;
     border-radius: 50px;
   }
+
   .header-logo img {
     width: 100%;
     border-radius: 50%;
   }
+
   .animacao {
     opacity: 0;
     animation: surgirlogo 20s ease forwards;
   }
+
   @keyframes surgirlogo {
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
   }
+
   .header-menu ul {
     width: 60%;
     display: flex;
@@ -682,25 +806,36 @@
     text-transform: uppercase;
     font-weight: 100;
   }
+
   .links-menu {
     text-decoration: none;
     color: #fff;
   }
+
+  .apresentacao {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .header-apresentacao {
     width: 90%;
-    margin-top: 60px;
-    margin-left: 50px;
     color: #fff;
     padding-top: 40px;
   }
+
   .header-titulo {
     font-size: 2rem;
     padding-top: 40px;
   }
+
   #titulo {
     font-style: italic;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
   }
+
   #subtitulo {
     font-style: italic;
     line-height: 40px;
@@ -708,26 +843,32 @@
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
   }
+
   .header-subtitulo {
     font-size: 1.9rem;
     padding: 4px;
   }
+
   .header-links {
     display: flex;
     flex-direction: row;
     gap: 10px;
   }
+
   .header-icons {
     width: 50px;
     height: 50px;
     border-radius: 50px;
   }
+
   .icon {
     width: 100%;
   }
+
   .menu-mobile {
     display: none;
   }
+
   .topo {
     position: fixed;
     bottom: 20px;
@@ -738,15 +879,19 @@
     cursor: pointer;
     z-index: 1000;
   }
+
   .topo:hover a img {
     transform: scale(1.2);
   }
+
   .esquerda {
     display: none;
   }
+
   .menu-burguer {
     display: none;
   }
+
   .menu-lateral {
     display: none;
   }
@@ -760,7 +905,9 @@
     background: url(/assets/img/background-mobile.png);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
   }
+
   .header-menu {
     width: 100%;
     height: 60px;
@@ -775,9 +922,11 @@
     box-shadow: rgb(254, 255, 255) 0px 2px 4px 0px,
       rgba(249, 252, 253, 0.32) 0px 2px 16px 0px;
   }
+
   .header-menu ul a:hover {
     transform: scale(1.4);
   }
+
   .header-menu h1 {
     width: 30%;
     height: 40px;
@@ -792,22 +941,27 @@
     height: 50px;
     border-radius: 50px;
   }
+
   .header-logo img {
     width: 100%;
     border-radius: 50%;
   }
+
   .animacao {
     opacity: 0;
     animation: surgirlogo 20s ease forwards;
   }
+
   @keyframes surgirlogo {
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
   }
+
   .header-menu ul {
     width: 60%;
     display: flex;
@@ -820,25 +974,36 @@
     text-transform: uppercase;
     font-weight: 100;
   }
+
   .links-menu {
     text-decoration: none;
     color: #fff;
   }
+
+  .apresentacao {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .header-apresentacao {
-    width: 60%;
-    margin-top: 60px;
-    margin-left: 50px;
+    width: 70%;
     color: #fff;
     padding-top: 40px;
   }
+
   .header-titulo {
     font-size: 2.1rem;
     padding-top: 40px;
   }
+
   #titulo {
     font-style: italic;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
   }
+
   #subtitulo {
     font-style: italic;
     line-height: 40px;
@@ -846,26 +1011,32 @@
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
   }
+
   .header-subtitulo {
     font-size: 1.7rem;
     padding: 4px;
   }
+
   .header-links {
     display: flex;
     flex-direction: row;
     gap: 10px;
   }
+
   .header-icons {
     width: 50px;
     height: 50px;
     border-radius: 50px;
   }
+
   .icon {
     width: 100%;
   }
+
   .menu-mobile {
     display: none;
   }
+
   .topo {
     position: fixed;
     bottom: 20px;
@@ -876,15 +1047,19 @@
     cursor: pointer;
     z-index: 1000;
   }
+
   .topo:hover a img {
     transform: scale(1.2);
   }
+
   .esquerda {
     display: none;
   }
+
   .menu-burguer {
     display: none;
   }
+
   .menu-lateral {
     display: none;
   }
