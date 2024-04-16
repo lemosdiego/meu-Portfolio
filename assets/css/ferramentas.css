@@ -1,5 +1,6 @@
 @media (min-width: 1201px) and (max-width: 1600px) {
   .container-ferramentas {
+    background: #082032;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -215,6 +216,7 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
   .container-ferramentas {
+    background: #082032;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -321,6 +323,7 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
   .container-ferramentas {
+    background: #082032;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -427,6 +430,7 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .container-ferramentas {
+    background: #082032;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -533,6 +537,7 @@
 
 @media (min-width: 1025px) and (max-width: 1200px) {
   .container-ferramentas {
+    background: #082032;
     height: 100vh;
     display: flex;
     flex-direction: row;
