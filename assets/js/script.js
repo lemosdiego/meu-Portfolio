@@ -193,4 +193,9 @@ barra10.style.color = "#7377ad";
 barra10.style.width = "30%";
 barra10.style.background = "#7377ad";
 
+let barra11 = document.getElementById("card11")
+barra11.style.color = "#6dd144"
+barra11.style.width = "50%"
+barra11.style.background = "#6dd144"
+
 //footer
