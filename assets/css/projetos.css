@@ -9,17 +9,18 @@
   }
 
   .titulo {
-    height: 20%;
+    height: 15%;
     width: 50%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
   }
 
   .titulo h2 {
-    color: #000;
-    font-size: 3rem;
+    color: #fff;
+    font-size: 5rem;
   }
 
   .conteudo {
@@ -204,11 +205,12 @@
   }
 
   .titulo {
-    height: 20%;
+    height: 15%;
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
   }
 
   .titulo h2 {
@@ -401,7 +403,7 @@
   }
 
   .titulo h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #fff;
   }
 
@@ -540,7 +542,7 @@
 
   .titulo h2 {
     color: #fff;
-    font-size: 2.8rem;
+    font-size: 3.3rem;
   }
 
   .conteudo {
@@ -827,7 +829,7 @@
 
   .titulo h2 {
     color: #fff;
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .conteudo {
