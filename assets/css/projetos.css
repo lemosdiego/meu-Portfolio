@@ -36,6 +36,7 @@
       rgba(235, 236, 236, 0.65) 0px 4px 6px -1px,
       rgba(253, 246, 246, 0.08) 0px 1px 0px inset;
     border-radius: 20px;
+    scroll-behavior: smooth;
   }
 
   .cards {
@@ -436,6 +437,7 @@
     box-shadow: rgba(232, 233, 235, 0.4) 0px 0px 0px 2px,
       rgba(235, 236, 236, 0.65) 0px 4px 6px -1px,
       rgba(253, 246, 246, 0.08) 0px 1px 0px inset;
+    scroll-behavior: smooth;
   }
 
   .cards {
@@ -574,6 +576,7 @@
     box-shadow: rgba(232, 233, 235, 0.4) 0px 0px 0px 2px,
       rgba(235, 236, 236, 0.65) 0px 4px 6px -1px,
       rgba(253, 246, 246, 0.08) 0px 1px 0px inset;
+    scroll-behavior: smooth;
   }
 
   .cards {
@@ -717,6 +720,7 @@
       rgba(235, 236, 236, 0.65) 0px 4px 6px -1px,
       rgba(253, 246, 246, 0.08) 0px 1px 0px inset;
     border-radius: 10px;
+    scroll-behavior: smooth;
   }
 
   .cards {
@@ -861,6 +865,7 @@
       rgba(235, 236, 236, 0.65) 0px 4px 6px -1px,
       rgba(253, 246, 246, 0.08) 0px 1px 0px inset;
     border-radius: 10px;
+    scroll-behavior: smooth;
   }
 
   .cards {
