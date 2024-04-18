@@ -231,7 +231,10 @@
       rgba(235, 236, 236, 0.65) 0px 4px 6px -1px,
       rgba(253, 246, 246, 0.08) 0px 1px 0px inset;
     border-radius: 20px;
+    scroll-behavior: smooth;
   }
+
+
 
   .cards {
     border: solid 1px #fff;
@@ -241,7 +244,19 @@
     border-radius: 20px;
     margin-left: 10px;
     margin-right: 10px;
+    /* animation: scrollCards 200s linear infinite; */
+
   }
+
+  /* @keyframes scrollCards {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(calc(-100%));
+    }
+  } */
 
   .cards:hover {
     transform: scale(1.1);
