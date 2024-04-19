@@ -85,6 +85,7 @@ direita.addEventListener("click", moverDireita);
 let titleCard0 = "Previsão do tempo"
 let descriptionCard0 = "Busque o clima da sua cidade"
 let linkCard0 = "https://github.com/lemosdiego/previsao-do-tempo.git"
+let linkVisite = "https://previsao-do-tempo-mu.vercel.app/"
 //modal1
 let titleCard1 = "Fynd my beer";
 let descriptionCard1 =
@@ -202,5 +203,31 @@ let barra12 = document.getElementById("card12")
 barra12.style.color = "#007cd1"
 barra12.style.width = "60%"
 barra12.style.background = "#007cd1"
+
+
+// Função para verificar se o elemento está visível na tela
+function isElementInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+
+function mostrarDivs() {
+  const divs = document.querySelectorAll('.niveis .card-niveis ');
+  if (isElementInViewport(divs[0].closest('.niveis'))) {
+    divs.forEach((div, index) => {
+      setTimeout(() => {
+        div.style.display = 'block';
+      }, 500 * index);
+    });
+  }
+}
+
+window.addEventListener('scroll', mostrarDivs);
 
 //footer
