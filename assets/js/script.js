@@ -1,3 +1,26 @@
+
+
+
+
+const myObserver = new IntersectionObserver((entradas) => {
+  entradas.forEach((entrada) => {
+    if (entrada.isIntersecting === true) {
+      entrada.target.classList.add("show")
+    } else {
+      entrada.target.classList.remove("show")
+    }
+  })
+})
+
+const elementos = document.querySelectorAll(".hidden")
+
+elementos.forEach((elemento) => myObserver.observe(elemento))
+
+
+
+
+
+
 //home
 let tituloElemento = document.getElementById("titulo");
 let subtituloElement = document.getElementById("subtitulo");

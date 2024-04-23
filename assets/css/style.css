@@ -11,6 +11,7 @@ html {
 body {
   overflow-x: hidden;
   background: #010127;
+
 }
 
 
@@ -161,4 +162,19 @@ li {
 
 .card-niveis {
   display: none;
+}
+
+
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 1s;
+  transform: translateX(-100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transition: all 1s;
+  transform: translateX(0);
 }
